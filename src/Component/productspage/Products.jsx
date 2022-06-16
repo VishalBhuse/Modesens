@@ -16,8 +16,11 @@ import React, { useEffect, useState } from "react";
 import { BsSearch } from "react-icons/bs";
 import { Filters } from "./Filters";
 import styled from "./products.module.css";
+import { useParams } from "react-router-dom";
 
 const Products = () => {
+  let { id } = useParams();
+  console.log(id);
   const category = [
     "Activewear",
     "Beachwear",
@@ -168,52 +171,55 @@ const Products = () => {
     "Jacquemus Capes",
     "Jacquemus Cardigans",
   ];
-  const headline = [
+  const headlinearr = [
     {
-      headline: "Baby Boys Fashion & Designer Products",
-      json: "baby_boys.json",
-    },
-    {
-      headline: "Designer Bath",
-      json: "bath.json",
-    },
-    {
-      headline: "Designer Beauty",
-      json: "beauty.json",
-    },
-    {
-      headline: "Designer Home Decor",
-      json: "homeDecor.json",
-    },
-    {
-      headline: "Designer Accessories for Men",
-      json: "men_accessories.json",
+      headline: "Womens Fashion & Designer Products",
+      json: "women.json",
     },
     {
       headline: "Designer Clothing for Men",
       json: "men_clothing.json",
     },
     {
-      headline: "Designer Grooming for Men",
-      json: "men_grooming.json",
+      headline: "Designer Beauty",
+      json: "beauty.json",
     },
     {
       headline: "Designer Bags for Women",
       json: "women_bags.json",
     },
     {
-      headline: "Womens Fashion & Designer Products",
-      json: "women.json",
+      headline: "Baby Boys Fashion & Designer Products",
+      json: "baby_boys.json",
+    },
+    {
+      headline: "Designer Home Decor",
+      json: "homeDecor.json",
+    },
+    {
+      headline: "Designer Bath",
+      json: "bath.json",
+    },
+    {
+      headline: "Designer Accessories for Men",
+      json: "men_accessories.json",
+    },
+
+    {
+      headline: "Designer Grooming for Men",
+      json: "men_grooming.json",
     },
   ];
 
   const [product, setproduct] = useState([]);
   useEffect(() => {
     axios
-      .get("https://unit4-335f9-default-rtdb.firebaseio.com/baby_boys.json")
+      .get(
+        `https://unit4-335f9-default-rtdb.firebaseio.com/${headlinearr[id].json}`
+      )
       .then((res) => setproduct(res.data))
       .catch((err) => console.log(err));
-  }, []);
+  }, [id]);
 
   return (
     <div className={styled.productmean}>
@@ -413,21 +419,29 @@ const Products = () => {
         </div>
       </div>
       <div className={styled.productside}>
-        <h1 className={styled.headline}>
-          Baby Boys' Fashion & Designer Products
-        </h1>
+        <h1 className={styled.headline}>{headlinearr[id].headline}</h1>
         <p className={styled.subheading}>
-          baby boys' fashion with price comparison across 500+ stores in one
-          place. Discover the latest designer fashion for baby boys at ModeSens.
+          {headlinearr[id].headline} with price comparison across 500+ stores in
+          one place. Discover the latest designer fashion for baby boys at
+          ModeSens.
         </p>
         <div className={styled.pagination}>
           <div className={styled.paginationno}>1 2 3 .... {">"}</div>
           <div className={styled.paginationimages}>
             {/* <img src="https://cdn.modesens.com/static/img/20210908column4.svg"  /> */}
-            <img src="https://cdn.modesens.com/static/img/20210908column4_active.svg" alt="a" />
-            <img src="https://cdn.modesens.com/static/img/20210908column3.svg" alt="a" />
+            <img
+              src="https://cdn.modesens.com/static/img/20210908column4_active.svg"
+              alt="a"
+            />
+            <img
+              src="https://cdn.modesens.com/static/img/20210908column3.svg"
+              alt="a"
+            />
             {/* <img src="https://cdn.modesens.com/static/img/20210908column3_active.svg"  /> */}
-            <img src="https://cdn.modesens.com/static/img/20210908column2.svg" alt="a" />
+            <img
+              src="https://cdn.modesens.com/static/img/20210908column2.svg"
+              alt="a"
+            />
             {/* <img src="https://cdn.modesens.com/static/img/20210908column2_active.svg"  /> */}
           </div>
           <div className={styled.paginationoption}>

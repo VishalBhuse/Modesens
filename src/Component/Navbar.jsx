@@ -60,7 +60,7 @@ export default function Navbar() {
             />
           </Flex>
           <Flex flex={{ base: 1 }} justify={{ base: "center", md: "start" }}>
-            <Link to={"#"}>
+            <Link to={"/"}>
               <Image
                 src="https://cdn.modesens.com/static/img/20190228newlogo-black.svg"
                 width="150px"
@@ -177,7 +177,7 @@ const DesktopNav = () => {
     <Stack direction={"row"} spacing={4}>
       <Box>
         <HStack spacing={"25px"}>
-          <Link to={"#"}>
+          <Link to={"/products/0"}>
             <Text
               fontSize={"13px"}
               fontWeight={"500"}
@@ -190,7 +190,7 @@ const DesktopNav = () => {
               WOMEN
             </Text>
           </Link>
-          <Link to={"#"}>
+          <Link to={"/products/1"}>
             <Text
               fontSize={"13px"}
               fontWeight={"500"}
@@ -203,7 +203,7 @@ const DesktopNav = () => {
               MEN
             </Text>
           </Link>
-          <Link to={"#"}>
+          <Link to={"/products/2"}>
             <Text
              border="1px inherit"
              _hover={{
@@ -216,7 +216,7 @@ const DesktopNav = () => {
               BEAUTY
             </Text>
           </Link>
-          <Link to={"#"}>
+          <Link to={"/products/3"}>
             <Text
              border="1px inherit"
              _hover={{
@@ -229,7 +229,7 @@ const DesktopNav = () => {
               KIDS
             </Text>
           </Link>
-          <Link to={"#"}>
+          <Link to={"/products/4"}>
             <Text
              border="1px inherit"
              _hover={{
@@ -255,7 +255,7 @@ const DesktopNav = () => {
               OFFERS
             </Text>
           </Link>
-          <Link to={"#"}>
+          <Link to={"/products/5"}>
             <Text
              border="1px inherit"
              _hover={{
