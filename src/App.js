@@ -1,13 +1,14 @@
 import "./App.css";
 import { Routes, Route } from "react-router-dom";
 
-import Products from "./Component/Products";
+import Navbar from "./Component/Navbar";
 import Product from "./Component/Product";
 import Footer from "./Component/Footer";
 import Login from "./Component/Login";
 import Dashboard from "./Component/Dashboard";
+import Products from "./Component/productspage/Products";
 import Homeindex from "./Component/Homeindex";
-import Navbar from "./Component/Navbar";
+// import { Filters } from "./Component/productspage/Filters";
 
 function App() {
   return (
@@ -17,7 +18,7 @@ function App() {
         <Route path="/" element={<Homeindex />} />
         <Route path="/login" element={<Login />} />
         <Route path="/dashboard" element={<Dashboard />} />
-        <Route path="/products" element={<Products />} />
+        <Route path="/products/:id" element={<Products />} />
         <Route path="/products/:id" element={<Product />} />
       </Routes>
 
