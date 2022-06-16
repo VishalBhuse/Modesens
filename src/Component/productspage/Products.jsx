@@ -185,10 +185,6 @@ const Products = () => {
       json: "beauty.json",
     },
     {
-      headline: "Designer Bags for Women",
-      json: "women_bags.json",
-    },
-    {
       headline: "Baby Boys Fashion & Designer Products",
       json: "baby_boys.json",
     },
@@ -208,6 +204,10 @@ const Products = () => {
     {
       headline: "Designer Grooming for Men",
       json: "men_grooming.json",
+    },
+    {
+      headline: "Designer Bags for Women",
+      json: "women_bags.json",
     },
   ];
 
