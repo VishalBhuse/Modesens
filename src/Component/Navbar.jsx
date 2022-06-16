@@ -111,7 +111,7 @@ export default function Navbar() {
                   <Link to={"#"}> My Alerts </Link>
                 </MenuItem>
                 <MenuItem fontWeight={"600"}>
-                  <Link to={"#"}> My Recently </Link> Viewd
+                  <Link to={"#"}> My Recently  Viewd</Link>
                 </MenuItem>
                 <hr />
                 <MenuItem fontWeight={"600"}>
@@ -121,7 +121,7 @@ export default function Navbar() {
                   <Link to={"#"}> My Orders </Link>
                 </MenuItem>
                 <MenuItem fontWeight={"600"}>
-                  <Link to={"#"}> My Save </Link> Searches
+                  <Link to={"#"}> My Save Searches</Link> 
                 </MenuItem>
                 <MenuItem fontWeight={"600"}>
                   <Link to={"#"}> My Loyality </Link>
