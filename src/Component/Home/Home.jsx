@@ -15,12 +15,12 @@ const Firstslider = () => {
   return (
     <>
       <Swiper
-      className={styles.swiper}
+        className={styles.vishalswiper}
         navigation={true}
         autoplay={{ delay: 3000 }}
         modules={[Navigation, Autoplay]}
       >
-        <SwiperSlide >
+        <SwiperSlide>
           <img
             src="https://cdn.modesens.com/banner/20220613-modesens-AERYNE-1140x400-EN.jpg"
             alt="slide1"
@@ -75,9 +75,10 @@ const Firstslider = () => {
           />
         </SwiperSlide>
         <SwiperSlide>
-          <img 
-          src="https://cdn.modesens.com/banner/20220615-modesens-Renaisa-1140x400-US-EN.jpg" 
-          alt="slide10" />
+          <img
+            src="https://cdn.modesens.com/banner/20220615-modesens-Renaisa-1140x400-US-EN.jpg"
+            alt="slide10"
+          />
         </SwiperSlide>
       </Swiper>
     </>
@@ -256,7 +257,6 @@ const Thirdslider = () => {
   );
 };
 
-
 const Product1 = () => {
   const productdata1 = [
     {
@@ -381,7 +381,7 @@ const Product1 = () => {
         {productdata1.map((el) => (
           <SwiperSlide className={styles.product1img} key={el.id}>
             <span>♡</span>
-            <img src={el.imgsrc} />
+            <img src={el.imgsrc} alt={"slide" + el.id} />
             <div className={styles.product1quckview}>
               <h2>QUICK VIEW</h2>
             </div>
@@ -539,7 +539,7 @@ const Product2 = () => {
         {productdata1.map((el) => (
           <SwiperSlide className={styles.product1img} key={el.id}>
             <span>♡</span>
-            <img src={el.imgsrc} />
+            <img src={el.imgsrc} alt={"slide" + el.id} />
             <div className={styles.product1quckview}>
               <h2>QUICK VIEW</h2>
             </div>
@@ -572,7 +572,6 @@ const Product2 = () => {
     </>
   );
 };
-
 
 const Lastslider = () => {
   return (
@@ -675,7 +674,6 @@ const Lastslider = () => {
     </>
   );
 };
-
 
 const Secondlastsection = () => {
   return (

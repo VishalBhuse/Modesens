@@ -1,6 +1,11 @@
-  
+
+
+  .vishalswiper{
+    z-index: -1 !important;
+  }
   .img222{
     padding: 50px 0px;
+    z-index: -1 !important;
     height: 60vh !important;
   }
   
@@ -39,6 +44,9 @@
     border: 1px solid #000 !important;
     margin-top: 2rem !important;
     font-weight: 600;
+    position: relative;
+    z-index: 1 !important;
+
   }
   .blackbuttonhover:hover{
     padding: 10px;
@@ -52,9 +60,6 @@
     background-color: black;
     color: #fff;
     margin: 20px 0px !important;
-  }
-  .swiper-pagination-bullet{
-    display: none !important;
   }
   .lastsliderimg {
     border: 1px solid rgb(209, 203, 203) !important;
@@ -91,7 +96,7 @@
   }
   
   .product1img:hover .product1quckview {
-  display: block !important;
+  display: block !important ;
   }
   
   
@@ -143,3 +148,6 @@
     }
     
      */
+
+
+  
