@@ -424,10 +424,10 @@ const Products = () => {
           <div className={styled.paginationno}>1 2 3 .... {">"}</div>
           <div className={styled.paginationimages}>
             {/* <img src="https://cdn.modesens.com/static/img/20210908column4.svg"  /> */}
-            <img src="https://cdn.modesens.com/static/img/20210908column4_active.svg" />
-            <img src="https://cdn.modesens.com/static/img/20210908column3.svg" />
+            <img src="https://cdn.modesens.com/static/img/20210908column4_active.svg" alt="a" />
+            <img src="https://cdn.modesens.com/static/img/20210908column3.svg" alt="a" />
             {/* <img src="https://cdn.modesens.com/static/img/20210908column3_active.svg"  /> */}
-            <img src="https://cdn.modesens.com/static/img/20210908column2.svg" />
+            <img src="https://cdn.modesens.com/static/img/20210908column2.svg" alt="a" />
             {/* <img src="https://cdn.modesens.com/static/img/20210908column2_active.svg"  /> */}
           </div>
           <div className={styled.paginationoption}>
@@ -447,7 +447,7 @@ const Products = () => {
           {product.map((item) => (
             <div className={styled.product1img} key={1}>
               <span>♡</span>
-              <img src={item.product_img_src} />
+              <img src={item.product_img_src} alt="ab" />
               <div className={styled.product1quckview}>
                 <h2>QUICK VIEW</h2>
               </div>
