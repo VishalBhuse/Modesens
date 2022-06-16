@@ -1,0 +1,682 @@
+[
+  {
+    "web-scraper-order": "1655212709-101",
+    "web-scraper-start-url": "https://modesens.com/shop-women-bags/",
+    "category_womenBags": "BURBERRY Ladies Natural/ Tan Louise Canvas And Leather Round Crossbody In Neutrals     $924 - $1150 6 stores",
+    "category_womenBags-href": "https://modesens.com/product/burberry-ladies-natural-tan-louise-canvas-and-leather-round-crossbody-neutrals-34955167/",
+    "product_name": "BURBERRY",
+    "product_description": "Ladies Natural/ Tan Louise Canvas And Leather Round Crossbody In Neutrals",
+    "product_womenBagPrice": "$924 - $1150",
+    "product_womenBagImg-src": "https://cdn.modesens.com/product/34955167_2?w=400&"
+  },
+  {
+    "web-scraper-order": "1655212732-109",
+    "web-scraper-start-url": "https://modesens.com/shop-women-bags/",
+    "category_womenBags": "SAINT LAURENT Sade Puffy Leather Envelope Clutch Bag In Beige     $1502 - $1750 6 stores",
+    "category_womenBags-href": "https://modesens.com/product/saint-laurent-sade-puffy-leather-envelope-clutch-bag-beige-30102731/",
+    "product_name": "SAINT LAURENT",
+    "product_description": "Sade Puffy Leather Envelope Clutch Bag In Beige",
+    "product_womenBagPrice": "$1502 - $1750",
+    "product_womenBagImg-src": "https://cdn.modesens.com/product/30102731_19?w=400&"
+  },
+  {
+    "web-scraper-order": "1655212627-69",
+    "web-scraper-start-url": "https://modesens.com/shop-women-bags/",
+    "category_womenBags": "ALAÏA Black Hinge Flap Shoulder Bag     $1112 - $2770 5 stores",
+    "category_womenBags-href": "https://modesens.com/product/alaia-black-hinge-flap-shoulder-bag-42777234/",
+    "product_name": "ALAÏA",
+    "product_description": "Black Hinge Flap Shoulder Bag",
+    "product_womenBagPrice": "$1112 - $2770",
+    "product_womenBagImg-src": "https://cdn.modesens.com/availability/47893277?w=400&"
+  },
+  {
+    "web-scraper-order": "1655212779-124",
+    "web-scraper-start-url": "https://modesens.com/shop-women-bags/",
+    "category_womenBags": "BOTTEGA VENETA The Mini Pouch Calfskin Leather Crossbody Bag In White     $1650 - $2100 8 stores",
+    "category_womenBags-href": "https://modesens.com/product/bottega-veneta-the-mini-pouch-calfskin-leather-crossbody-bag-white-21296107/",
+    "product_name": "BOTTEGA VENETA",
+    "product_description": "The Mini Pouch Calfskin Leather Crossbody Bag In White",
+    "product_womenBagPrice": "$1650 - $2100",
+    "product_womenBagImg-src": "https://res.cloudinary.com/ssenseweb/image/upload/b_white%2Cc_lpad%2Cg_center%2Ch_960%2Cw_960/c_scale%2Ch_680/f_auto%2Cdpr_1.0/212798F044011_1.jpg"
+  },
+  {
+    "web-scraper-order": "1655212804-133",
+    "web-scraper-start-url": "https://modesens.com/shop-women-bags/",
+    "category_womenBags": "KHAITE Cream Remi Hobo Leather Shoulder Bag In Cream (beige)     $799 - $1400 9 stores",
+    "category_womenBags-href": "https://modesens.com/product/khaite-cream-remi-hobo-leather-shoulder-bag-cream-beige-38549117/",
+    "product_name": "KHAITE",
+    "product_description": "Cream Remi Hobo Leather Shoulder Bag In Cream (beige)",
+    "product_womenBagPrice": "$799 - $1400",
+    "product_womenBagImg-src": "https://cdn.modesens.com/product/38549117_1?w=400&"
+  },
+  {
+    "web-scraper-order": "1655212790-128",
+    "web-scraper-start-url": "https://modesens.com/shop-women-bags/",
+    "category_womenBags": "BOTTEGA VENETA Torchon Tasseled Twisted Leather Shoulder Bag In Pink     $3616 - $5750 8 stores",
+    "category_womenBags-href": "https://modesens.com/product/bottega-veneta-torchon-tasseled-twisted-leather-shoulder-bag-pink-36406315/",
+    "product_name": "BOTTEGA VENETA",
+    "product_description": "Torchon Tasseled Twisted Leather Shoulder Bag In Pink",
+    "product_womenBagPrice": "$3616 - $5750",
+    "product_womenBagImg-src": "https://media.neimanmarcus.com/f_auto,q_auto/w_1200,h_1500/01/nm_4159096_100503_m"
+  },
+  {
+    "web-scraper-order": "1655212810-135",
+    "web-scraper-start-url": "https://modesens.com/shop-women-bags/",
+    "category_womenBags": "BOTTEGA VENETA Cassette Padded Intrecciato Leather Shoulder Bag In Grey     $2750 - $3900 10 stores",
+    "category_womenBags-href": "https://modesens.com/product/bottega-veneta-cassette-padded-intrecciato-leather-shoulder-bag-grey-32485499/",
+    "product_name": "BOTTEGA VENETA",
+    "product_description": "Cassette Padded Intrecciato Leather Shoulder Bag In Grey",
+    "product_womenBagPrice": "$2750 - $3900",
+    "product_womenBagImg-src": "https://cdn.modesens.com/product/32485499_13?w=400&"
+  },
+  {
+    "web-scraper-order": "1655212644-76",
+    "web-scraper-start-url": "https://modesens.com/shop-women-bags/",
+    "category_womenBags": "BOTTEGA VENETA Bolster Reversible Shearling Oversized Tote Bag In Blaster     $3960 - $4500 5 stores",
+    "category_womenBags-href": "https://modesens.com/product/bottega-veneta-bolster-reversible-shearling-oversized-tote-bag-blaster-36405572/",
+    "product_name": "BOTTEGA VENETA",
+    "product_description": "Bolster Reversible Shearling Oversized Tote Bag In Blaster",
+    "product_womenBagPrice": "$3960 - $4500",
+    "product_womenBagImg-src": "https://cdn.modesens.com/product/36405572_3?w=400&"
+  },
+  {
+    "web-scraper-order": "1655212697-97",
+    "web-scraper-start-url": "https://modesens.com/shop-women-bags/",
+    "category_womenBags": "SAINT LAURENT Le Maillon Leather Satchel Shoulder Bag In Red     $2035 - $2650 6 stores",
+    "category_womenBags-href": "https://modesens.com/product/saint-laurent-le-maillon-leather-satchel-shoulder-bag-red-26849684/",
+    "product_name": "SAINT LAURENT",
+    "product_description": "Le Maillon Leather Satchel Shoulder Bag In Red",
+    "product_womenBagPrice": "$2035 - $2650",
+    "product_womenBagImg-src": "https://cdn.modesens.com/product/26849684_11?w=400&"
+  },
+  {
+    "web-scraper-order": "1655212656-81",
+    "web-scraper-start-url": "https://modesens.com/shop-women-bags/",
+    "category_womenBags": "BOTTEGA VENETA Small Shearling Intreccio Arco Tote Bag In Red     $2177 - $3200 6 stores",
+    "category_womenBags-href": "https://modesens.com/product/bottega-veneta-small-shearling-intreccio-arco-tote-bag-red-40731073/",
+    "product_name": "BOTTEGA VENETA",
+    "product_description": "Small Shearling Intreccio Arco Tote Bag In Red",
+    "product_womenBagPrice": "$2177 - $3200",
+    "product_womenBagImg-src": "https://cdn-images.farfetch-contents.com/16/98/67/47/16986747_37551831_1000.jpg"
+  },
+  {
+    "web-scraper-order": "1655212700-98",
+    "web-scraper-start-url": "https://modesens.com/shop-women-bags/",
+    "category_womenBags": "SAINT LAURENT Medium Niki Raffia Monogramme Chain Bag In Purple     $2390 - $2741 6 stores",
+    "category_womenBags-href": "https://modesens.com/product/saint-laurent-medium-niki-raffia-monogramme-chain-bag-purple-42617581/",
+    "product_name": "SAINT LAURENT",
+    "product_description": "Medium Niki Raffia Monogramme Chain Bag In Purple",
+    "product_womenBagPrice": "$2390 - $2741",
+    "product_womenBagImg-src": "https://cdn-images.farfetch-contents.com/17/60/89/24/17608924_39022460_1000.jpg"
+  },
+  {
+    "web-scraper-order": "1655212785-126",
+    "web-scraper-start-url": "https://modesens.com/shop-women-bags/",
+    "category_womenBags": "BOTTEGA VENETA The Teen Double Knot Leather Top Handle Bag In Black     $2750 8 stores",
+    "category_womenBags-href": "https://modesens.com/product/bottega-veneta-the-teen-double-knot-leather-top-handle-bag-black-39021084/",
+    "product_name": "BOTTEGA VENETA",
+    "product_description": "The Teen Double Knot Leather Top Handle Bag In Black",
+    "product_womenBagPrice": "$2750",
+    "product_womenBagImg-src": "https://cdn.modesens.com/product/39021084_1?w=400&"
+  },
+  {
+    "web-scraper-order": "1655212651-79",
+    "web-scraper-start-url": "https://modesens.com/shop-women-bags/",
+    "category_womenBags": "SAINT LAURENT Le Maillon Leather Satchel Shoulder Bag In Crema Soft     $2329 - $2650 6 stores",
+    "category_womenBags-href": "https://modesens.com/product/saint-laurent-le-maillon-leather-satchel-shoulder-bag-crema-soft-26994816/",
+    "product_name": "SAINT LAURENT",
+    "product_description": "Le Maillon Leather Satchel Shoulder Bag In Crema Soft",
+    "product_womenBagPrice": "$2329 - $2650",
+    "product_womenBagImg-src": "https://cdn.modesens.com/product/26994816_108?w=400&"
+  },
+  {
+    "web-scraper-order": "1655212743-112",
+    "web-scraper-start-url": "https://modesens.com/shop-women-bags/",
+    "category_womenBags": "SAINT LAURENT Loulou Puffer Small Quilted Leather Clutch In Nero     $765 - $945 7 stores",
+    "category_womenBags-href": "https://modesens.com/product/saint-laurent-loulou-puffer-small-quilted-leather-clutch-nero-27196846/",
+    "product_name": "SAINT LAURENT",
+    "product_description": "Loulou Puffer Small Quilted Leather Clutch In Nero",
+    "product_womenBagPrice": "$765 - $945",
+    "product_womenBagImg-src": "https://res.cloudinary.com/ssenseweb/image/upload/b_white%2Cc_lpad%2Cg_center%2Ch_960%2Cw_960/c_scale%2Ch_680/f_auto%2Cdpr_1.0/212418F045030_1.jpg"
+  },
+  {
+    "web-scraper-order": "1655212771-122",
+    "web-scraper-start-url": "https://modesens.com/shop-women-bags/",
+    "category_womenBags": "BOTTEGA VENETA Jodie Teen Intrecciato-leather Shoulder Bag In Brown     $2712 - $3200 8 stores",
+    "category_womenBags-href": "https://modesens.com/product/bottega-veneta-jodie-teen-intrecciato-leather-shoulder-bag-brown-42429116/",
+    "product_name": "BOTTEGA VENETA",
+    "product_description": "Jodie Teen Intrecciato-leather Shoulder Bag In Brown",
+    "product_womenBagPrice": "$2712 - $3200",
+    "product_womenBagImg-src": "https://image.s5a.com/is/image/saks/0400015731362_CARAMELGOLD?wid=972&hei=1296&fmt=jpeg"
+  },
+  {
+    "web-scraper-order": "1655212768-121",
+    "web-scraper-start-url": "https://modesens.com/shop-women-bags/",
+    "category_womenBags": "BOTTEGA VENETA Torchon Tasseled Twisted Leather Shoulder Bag In Blue     $4349 - $5750 7 stores",
+    "category_womenBags-href": "https://modesens.com/product/bottega-veneta-torchon-tasseled-twisted-leather-shoulder-bag-blue-36053123/",
+    "product_name": "BOTTEGA VENETA",
+    "product_description": "Torchon Tasseled Twisted Leather Shoulder Bag In Blue",
+    "product_womenBagPrice": "$4349 - $5750",
+    "product_womenBagImg-src": "https://cdn.modesens.com/product/36053123_6?w=400&"
+  },
+  {
+    "web-scraper-order": "1655212802-132",
+    "web-scraper-start-url": "https://modesens.com/shop-women-bags/",
+    "category_womenBags": "LOEWE Yellow Amazona 19 Small Leather Top Handle Bag     $2990 - $3080 9 stores",
+    "category_womenBags-href": "https://modesens.com/product/loewe-yellow-amazona-19-small-leather-top-handle-bag-35542046/",
+    "product_name": "LOEWE",
+    "product_description": "Yellow Amazona 19 Small Leather Top Handle Bag",
+    "product_womenBagPrice": "$2990 - $3080",
+    "product_womenBagImg-src": "https://cdn.modesens.com/product/35542046_9?w=400&"
+  },
+  {
+    "web-scraper-order": "1655212663-84",
+    "web-scraper-start-url": "https://modesens.com/shop-women-bags/",
+    "category_womenBags": "BOTTEGA VENETA Orange The Mini Jodie Shearling Clutch Bag In Light Orange & Gold     $2265 - $2750 6 stores",
+    "category_womenBags-href": "https://modesens.com/product/bottega-veneta-orange-the-mini-jodie-shearling-clutch-bag-light-orange-and-gold-39225369/",
+    "product_name": "BOTTEGA VENETA",
+    "product_description": "Orange The Mini Jodie Shearling Clutch Bag In Light Orange & Gold",
+    "product_womenBagPrice": "$2265 - $2750",
+    "product_womenBagImg-src": "https://img.mytheresa.com/1000/1000/95/jpeg/catalog/product/37/P00649505.jpg"
+  },
+  {
+    "web-scraper-order": "1655212763-119",
+    "web-scraper-start-url": "https://modesens.com/shop-women-bags/",
+    "category_womenBags": "SAINT LAURENT Ysl Soft Leather Hobo Shoulder Bag In White     $1924 - $2250 7 stores",
+    "category_womenBags-href": "https://modesens.com/product/saint-laurent-ysl-soft-leather-hobo-shoulder-bag-white-35097307/",
+    "product_name": "SAINT LAURENT",
+    "product_description": "Ysl Soft Leather Hobo Shoulder Bag In White",
+    "product_womenBagPrice": "$1924 - $2250",
+    "product_womenBagImg-src": "https://res.cloudinary.com/ssenseweb/image/upload/b_white%2Cc_lpad%2Cg_center%2Ch_960%2Cw_960/c_scale%2Ch_680/f_auto%2Cdpr_1.0/212418F048150_1.jpg"
+  },
+  {
+    "web-scraper-order": "1655212781-125",
+    "web-scraper-start-url": "https://modesens.com/shop-women-bags/",
+    "category_womenBags": "LOEWE Flamenco Pocket Mini Drawstring Crossbody Bag In Brown     $1300 8 stores",
+    "category_womenBags-href": "https://modesens.com/product/loewe-flamenco-pocket-mini-drawstring-crossbody-bag-brown-37970390/",
+    "product_name": "LOEWE",
+    "product_description": "Flamenco Pocket Mini Drawstring Crossbody Bag In Brown",
+    "product_womenBagPrice": "$1300",
+    "product_womenBagImg-src": "https://cdn.modesens.com/product/37970390_9?w=400&"
+  },
+  {
+    "web-scraper-order": "1655212685-93",
+    "web-scraper-start-url": "https://modesens.com/shop-women-bags/",
+    "category_womenBags": "SAINT LAURENT Lou Matelassé Suede & Leather Camera Bag In Rose Rubis     $1450 - $1490 6 stores",
+    "category_womenBags-href": "https://modesens.com/product/saint-laurent-lou-matelasse-suede-and-leather-camera-bag-rose-rubis-45995394/",
+    "product_name": "SAINT LAURENT",
+    "product_description": "Lou Matelassé Suede & Leather Camera Bag In Rose Rubis",
+    "product_womenBagPrice": "$1450 - $1490",
+    "product_womenBagImg-src": "https://cdn-images.farfetch-contents.com/17/60/77/81/17607781_39024828_1000.jpg"
+  },
+  {
+    "web-scraper-order": "1655212727-107",
+    "web-scraper-start-url": "https://modesens.com/shop-women-bags/",
+    "category_womenBags": "BOTTEGA VENETA Womens Mallard Gold Padded Cassette Leather Cross-body Bag In Blue     $3293 - $3900 6 stores",
+    "category_womenBags-href": "https://modesens.com/product/bottega-veneta-womens-mallard-gold-padded-cassette-leather-cross-body-bag-blue-28870166/",
+    "product_name": "BOTTEGA VENETA",
+    "product_description": "Womens Mallard Gold Padded Cassette Leather Cross-body Bag In Blue",
+    "product_womenBagPrice": "$3293 - $3900",
+    "product_womenBagImg-src": "https://cdn.modesens.com/product/28870166_22?w=400&"
+  },
+  {
+    "web-scraper-order": "1655212705-100",
+    "web-scraper-start-url": "https://modesens.com/shop-women-bags/",
+    "category_womenBags": "BOTTEGA VENETA Womens Seagrass-silver Point Small Leather Clutch Bag 1size In Green     $2250 - $3200 6 stores",
+    "category_womenBags-href": "https://modesens.com/product/bottega-veneta-womens-seagrass-silver-point-small-leather-clutch-bag-1size-green-28870127/",
+    "product_name": "BOTTEGA VENETA",
+    "product_description": "Womens Seagrass-silver Point Small Leather Clutch Bag 1size In Green",
+    "product_womenBagPrice": "$2250 - $3200",
+    "product_womenBagImg-src": "https://cdn.modesens.com/product/28870127_17?w=400&"
+  },
+  {
+    "web-scraper-order": "1655212807-134",
+    "web-scraper-start-url": "https://modesens.com/shop-women-bags/",
+    "category_womenBags": "LOEWE Hammock Small Textured-leather Shoulder Bag In Black     $2446 - $2850 9 stores",
+    "category_womenBags-href": "https://modesens.com/product/loewe-hammock-small-textured-leather-shoulder-bag-black-9694891/",
+    "product_name": "LOEWE",
+    "product_description": "Hammock Small Textured-leather Shoulder Bag In Black",
+    "product_womenBagPrice": "$2446 - $2850",
+    "product_womenBagImg-src": "https://cdn.modesens.com/product/9694891_67?w=400&"
+  },
+  {
+    "web-scraper-order": "1655212717-104",
+    "web-scraper-start-url": "https://modesens.com/shop-women-bags/",
+    "category_womenBags": "BURBERRY Lola Small Tb Quilted Leather Chain Bucket Bag In Black     $1950 6 stores",
+    "category_womenBags-href": "https://modesens.com/product/burberry-lola-small-tb-quilted-leather-chain-bucket-bag-black-36405409/",
+    "product_name": "BURBERRY",
+    "product_description": "Lola Small Tb Quilted Leather Chain Bucket Bag In Black",
+    "product_womenBagPrice": "$1950",
+    "product_womenBagImg-src": "https://cdn.modesens.com/product/36405409_10?w=400&"
+  },
+  {
+    "web-scraper-order": "1655212799-131",
+    "web-scraper-start-url": "https://modesens.com/shop-women-bags/",
+    "category_womenBags": "LOEWE Luna Small Canvas-jacquard Trimmed Leather Shoulder Bag In Avocado Green     $1990 - $2450 9 stores",
+    "category_womenBags-href": "https://modesens.com/product/loewe-luna-small-canvas-jacquard-trimmed-leather-shoulder-bag-avocado-green-41470176/",
+    "product_name": "LOEWE",
+    "product_description": "Luna Small Canvas-jacquard Trimmed Leather Shoulder Bag In Avocado Green",
+    "product_womenBagPrice": "$1990 - $2450",
+    "product_womenBagImg-src": "https://image.s5a.com/is/image/saks/0400016011593_AVOCADOGREEN?wid=972&hei=1296&fmt=jpeg"
+  },
+  {
+    "web-scraper-order": "1655212748-114",
+    "web-scraper-start-url": "https://modesens.com/shop-women-bags/",
+    "category_womenBags": "BOTTEGA VENETA Cassette Intrecciato Patent Leather Crossbody Bag In Black & Gold     $2200 - $2500 7 stores",
+    "category_womenBags-href": "https://modesens.com/product/bottega-veneta-cassette-intrecciato-patent-leather-crossbody-bag-black-and-gold-34389535/",
+    "product_name": "BOTTEGA VENETA",
+    "product_description": "Cassette Intrecciato Patent Leather Crossbody Bag In Black & Gold",
+    "product_womenBagPrice": "$2200 - $2500",
+    "product_womenBagImg-src": "https://cdn.modesens.com/product/34389535_11?w=400&"
+  },
+  {
+    "web-scraper-order": "1655212632-71",
+    "web-scraper-start-url": "https://modesens.com/shop-women-bags/",
+    "category_womenBags": "BOTTEGA VENETA Bv Crisscross Padded Intrecciato Leather Clutch In Beige     $2149 - $2800 5 stores",
+    "category_womenBags-href": "https://modesens.com/product/bottega-veneta-bv-crisscross-padded-intrecciato-leather-clutch-beige-22497373/",
+    "product_name": "BOTTEGA VENETA",
+    "product_description": "Bv Crisscross Padded Intrecciato Leather Clutch In Beige",
+    "product_womenBagPrice": "$2149 - $2800",
+    "product_womenBagImg-src": "https://cdn.modesens.com/product/22497373_14?w=400&"
+  },
+  {
+    "web-scraper-order": "1655212787-127",
+    "web-scraper-start-url": "https://modesens.com/shop-women-bags/",
+    "category_womenBags": "BOTTEGA VENETA Neutral The Chain Pouch Shearling Shoulder Bag In Neutrals     $4100 8 stores",
+    "category_womenBags-href": "https://modesens.com/product/bottega-veneta-neutral-the-chain-pouch-shearling-shoulder-bag-neutrals-33240649/",
+    "product_name": "BOTTEGA VENETA",
+    "product_description": "Neutral The Chain Pouch Shearling Shoulder Bag In Neutrals",
+    "product_womenBagPrice": "$4100",
+    "product_womenBagImg-src": "https://cdn.modesens.com/product/33240649_8?w=400&"
+  },
+  {
+    "web-scraper-order": "1655212765-120",
+    "web-scraper-start-url": "https://modesens.com/shop-women-bags/",
+    "category_womenBags": "LOEWE Anagram Medium Leather-trimmed Embroidered Canvas Tote In Neutral     $1850 - $2100 7 stores",
+    "category_womenBags-href": "https://modesens.com/product/loewe-anagram-medium-leather-trimmed-embroidered-canvas-tote-neutral-27732708/",
+    "product_name": "LOEWE",
+    "product_description": "Anagram Medium Leather-trimmed Embroidered Canvas Tote In Neutral",
+    "product_womenBagPrice": "$1850 - $2100",
+    "product_womenBagImg-src": "https://cdn.modesens.com/product/27732708_29?w=400&"
+  },
+  {
+    "web-scraper-order": "1655212815-136",
+    "web-scraper-start-url": "https://modesens.com/shop-women-bags/",
+    "category_womenBags": "SAINT LAURENT Le Monogramme Leather-trimmed Printed Coated-canvas Bucket Bag In Brown     $1205 - $1490 10 stores",
+    "category_womenBags-href": "https://modesens.com/product/saint-laurent-le-monogramme-leather-trimmed-printed-coated-canvas-bucket-bag-brown-34032265/",
+    "product_name": "SAINT LAURENT",
+    "product_description": "Le Monogramme Leather-trimmed Printed Coated-canvas Bucket Bag In Brown",
+    "product_womenBagPrice": "$1205 - $1490",
+    "product_womenBagImg-src": "https://cdn.modesens.com/product/34032265_12?w=400&"
+  },
+  {
+    "web-scraper-order": "1655212680-91",
+    "web-scraper-start-url": "https://modesens.com/shop-women-bags/",
+    "category_womenBags": "BOTTEGA VENETA Medium Mount Leather Crossbody Bag In Emerald Green-gold     $2806 - $3500 6 stores",
+    "category_womenBags-href": "https://modesens.com/product/bottega-veneta-medium-mount-leather-crossbody-bag-emerald-green-gold-33145731/",
+    "product_name": "BOTTEGA VENETA",
+    "product_description": "Medium Mount Leather Crossbody Bag In Emerald Green-gold",
+    "product_womenBagPrice": "$2806 - $3500",
+    "product_womenBagImg-src": "https://www.net-a-porter.com/variants/images/17411127377168819/in/w1000.jpg"
+  },
+  {
+    "web-scraper-order": "1655212634-72",
+    "web-scraper-start-url": "https://modesens.com/shop-women-bags/",
+    "category_womenBags": "SAINT LAURENT Black Toy North/south Shopping Tote     $1007 - $1250 5 stores",
+    "category_womenBags-href": "https://modesens.com/product/saint-laurent-black-toy-northsouth-shopping-tote-6865763/",
+    "product_name": "SAINT LAURENT",
+    "product_description": "Black Toy North/south Shopping Tote",
+    "product_womenBagPrice": "$1007 - $1250",
+    "product_womenBagImg-src": "https://cdn.modesens.com/product/6865763_63?w=400&"
+  },
+  {
+    "web-scraper-order": "1655212673-88",
+    "web-scraper-start-url": "https://modesens.com/shop-women-bags/",
+    "category_womenBags": "SEE BY CHLOÉ Black Odessa Small Leather Shoulder Bag     $272 - $520 6 stores",
+    "category_womenBags-href": "https://modesens.com/product/see-by-chloe-black-odessa-small-leather-shoulder-bag-44831787/",
+    "product_name": "SEE BY CHLOÉ",
+    "product_description": "Black Odessa Small Leather Shoulder Bag",
+    "product_womenBagPrice": "$272 - $520",
+    "product_womenBagImg-src": "https://cdn-images.italist.com/image/upload/t_zoom_v3_q_auto/2a642400ad2dce82b92790b9aa60cd22.jpg"
+  },
+  {
+    "web-scraper-order": "1655212666-85",
+    "web-scraper-start-url": "https://modesens.com/shop-women-bags/",
+    "category_womenBags": "TORY BURCH Mini T Monogram Jacquard Bucket Bag In Hazelnut     $398 - $498 6 stores",
+    "category_womenBags-href": "https://modesens.com/product/tory-burch-mini-t-monogram-jacquard-bucket-bag-hazelnut-34856288/",
+    "product_name": "TORY BURCH",
+    "product_description": "Mini T Monogram Jacquard Bucket Bag In Hazelnut",
+    "product_womenBagPrice": "$398 - $498",
+    "product_womenBagImg-src": "https://s7.toryburch.com/is/image/ToryBurchLLC/TB_87961_371?$trb_grid_lg$"
+  },
+  {
+    "web-scraper-order": "1655212654-80",
+    "web-scraper-start-url": "https://modesens.com/shop-women-bags/",
+    "category_womenBags": "LOEWE Cubi Small Anagram-jacquard Canvas And Leather Bag In Green     $1200 6 stores",
+    "category_womenBags-href": "https://modesens.com/product/loewe-cubi-small-anagram-jacquard-canvas-and-leather-bag-green-38499480/",
+    "product_name": "LOEWE",
+    "product_description": "Cubi Small Anagram-jacquard Canvas And Leather Bag In Green",
+    "product_womenBagPrice": "$1200",
+    "product_womenBagImg-src": "https://cdn.modesens.com/product/38499480_2?w=400&"
+  },
+  {
+    "web-scraper-order": "1655212649-78",
+    "web-scraper-start-url": "https://modesens.com/shop-women-bags/",
+    "category_womenBags": "BOTTEGA VENETA The Mini Pouch Calfskin Leather Crossbody Bag In Black     $1550 - $2100 6 stores",
+    "category_womenBags-href": "https://modesens.com/product/bottega-veneta-the-mini-pouch-calfskin-leather-crossbody-bag-black-17864617/",
+    "product_name": "BOTTEGA VENETA",
+    "product_description": "The Mini Pouch Calfskin Leather Crossbody Bag In Black",
+    "product_womenBagPrice": "$1550 - $2100",
+    "product_womenBagImg-src": "https://is4.fwrdassets.com/images/p/fw/45/BOTT-WY279_V1.jpg"
+  },
+  {
+    "web-scraper-order": "1655212639-74",
+    "web-scraper-start-url": "https://modesens.com/shop-women-bags/",
+    "category_womenBags": "BOTTEGA VENETA Point Basket Intrecciato Leather Tote In Taupe     $3700 5 stores",
+    "category_womenBags-href": "https://modesens.com/product/bottega-veneta-point-basket-intrecciato-leather-tote-taupe-28870150/",
+    "product_name": "BOTTEGA VENETA",
+    "product_description": "Point Basket Intrecciato Leather Tote In Taupe",
+    "product_womenBagPrice": "$3700",
+    "product_womenBagImg-src": "https://cdn-images.farfetch-contents.com/16/85/75/42/16857542_33541976_1000.jpg"
+  },
+  {
+    "web-scraper-order": "1655212678-90",
+    "web-scraper-start-url": "https://modesens.com/shop-women-bags/",
+    "category_womenBags": "BOTTEGA VENETA Light Blue Mini Pouch Bag In Chenille     $1486 - $2350 6 stores",
+    "category_womenBags-href": "https://modesens.com/product/bottega-veneta-light-blue-mini-pouch-bag-in-chenille-39317903/",
+    "product_name": "BOTTEGA VENETA",
+    "product_description": "Light Blue Mini Pouch Bag In Chenille",
+    "product_womenBagPrice": "$1486 - $2350",
+    "product_womenBagImg-src": "https://media.bergdorfgoodman.com/f_auto,q_auto,b_auto,c_pad/01/bg_4218231_100380_m"
+  },
+  {
+    "web-scraper-order": "1655212735-110",
+    "web-scraper-start-url": "https://modesens.com/shop-women-bags/",
+    "category_womenBags": "SAINT LAURENT Gaby Mini Ysl Quilted Leather Satchel Bag In Black     $2190 - $2690 6 stores",
+    "category_womenBags-href": "https://modesens.com/product/saint-laurent-gaby-mini-ysl-quilted-leather-satchel-bag-black-35339127/",
+    "product_name": "SAINT LAURENT",
+    "product_description": "Gaby Mini Ysl Quilted Leather Satchel Bag In Black",
+    "product_womenBagPrice": "$2190 - $2690",
+    "product_womenBagImg-src": "https://cdn.modesens.com/product/35339127_4?w=400&"
+  },
+  {
+    "web-scraper-order": "1655212668-86",
+    "web-scraper-start-url": "https://modesens.com/shop-women-bags/",
+    "category_womenBags": "CULT GAIA Nia Acrylic Beaded Clutch In Clear     $428 6 stores",
+    "category_womenBags-href": "https://modesens.com/product/cult-gaia-nia-acrylic-beaded-clutch-clear-47151660/",
+    "product_name": "CULT GAIA",
+    "product_description": "Nia Acrylic Beaded Clutch In Clear",
+    "product_womenBagPrice": "$428",
+    "product_womenBagImg-src": "https://images.bloomingdalesassets.com/is/image/BLM/products/4/optimized/12213344_fpx.tif?wid=300&qlt=100,0&layer=comp&op_sharpen=0&resMode=bilin&op_usm=0.7,1.0,0.5,0&fmt=jpeg&4msn=.jpg"
+  },
+  {
+    "web-scraper-order": "1655212629-70",
+    "web-scraper-start-url": "https://modesens.com/shop-women-bags/",
+    "category_womenBags": "TOM FORD Avery Medium Soft Leather Hobo Shoulder Bag In Black     $1950 - $2150 5 stores",
+    "category_womenBags-href": "https://modesens.com/product/tom-ford-avery-medium-soft-leather-hobo-shoulder-bag-black-39218949/",
+    "product_name": "TOM FORD",
+    "product_description": "Avery Medium Soft Leather Hobo Shoulder Bag In Black",
+    "product_womenBagPrice": "$1950 - $2150",
+    "product_womenBagImg-src": "https://www.net-a-porter.com/variants/images/22250442026276153/in/w1000.jpg"
+  },
+  {
+    "web-scraper-order": "1655212714-103",
+    "web-scraper-start-url": "https://modesens.com/shop-women-bags/",
+    "category_womenBags": "BOTTEGA VENETA The Chain Pouch Shearling Clutch Bag In Brown     $3390 - $4100 6 stores",
+    "category_womenBags-href": "https://modesens.com/product/bottega-veneta-the-chain-pouch-shearling-clutch-bag-brown-33824668/",
+    "product_name": "BOTTEGA VENETA",
+    "product_description": "The Chain Pouch Shearling Clutch Bag In Brown",
+    "product_womenBagPrice": "$3390 - $4100",
+    "product_womenBagImg-src": "https://cdn.modesens.com/product/33824668_3?w=400&"
+  },
+  {
+    "web-scraper-order": "1655212719-105",
+    "web-scraper-start-url": "https://modesens.com/shop-women-bags/",
+    "category_womenBags": "LOEWE Mini Hammock Anagram Jacquard Canvas And Leather Drawstring Bag In Ecru/tan     $1680 - $1990 6 stores",
+    "category_womenBags-href": "https://modesens.com/product/loewe-mini-hammock-anagram-jacquard-canvas-and-leather-drawstring-bag-ecrutan-33951343/",
+    "product_name": "LOEWE",
+    "product_description": "Mini Hammock Anagram Jacquard Canvas And Leather Drawstring Bag In Ecru/tan",
+    "product_womenBagPrice": "$1680 - $1990",
+    "product_womenBagImg-src": "https://cache.net-a-porter.com/images/products/1340035/1340035_in_pp.jpg"
+  },
+  {
+    "web-scraper-order": "1655212760-118",
+    "web-scraper-start-url": "https://modesens.com/shop-women-bags/",
+    "category_womenBags": "BOTTEGA VENETA Padded Lock Small Intrecciato-leather Shoulder Bag In White     $3140 - $3700 7 stores",
+    "category_womenBags-href": "https://modesens.com/product/bottega-veneta-padded-lock-small-intrecciato-leather-shoulder-bag-white-36400235/",
+    "product_name": "BOTTEGA VENETA",
+    "product_description": "Padded Lock Small Intrecciato-leather Shoulder Bag In White",
+    "product_womenBagPrice": "$3140 - $3700",
+    "product_womenBagImg-src": "https://cdn.modesens.com/product/36400235_8?w=400&"
+  },
+  {
+    "web-scraper-order": "1655212793-129",
+    "web-scraper-start-url": "https://modesens.com/shop-women-bags/",
+    "category_womenBags": "BOTTEGA VENETA Leather Intrecciato Card Holder In Black Gold     $305 - $350 9 stores",
+    "category_womenBags-href": "https://modesens.com/product/bottega-veneta-leather-intrecciato-card-holder-black-gold-31194591/",
+    "product_name": "BOTTEGA VENETA",
+    "product_description": "Leather Intrecciato Card Holder In Black Gold",
+    "product_womenBagPrice": "$305 - $350",
+    "product_womenBagImg-src": "https://cdn-images.farfetch-contents.com/16/98/66/47/16986647_36215021_1000.jpg"
+  },
+  {
+    "web-scraper-order": "1655212711-102",
+    "web-scraper-start-url": "https://modesens.com/shop-women-bags/",
+    "category_womenBags": "SAINT LAURENT Fanny Crystal-embellished Mesh Shoulder Bag In 1067 Nerocrystal     $3150 6 stores",
+    "category_womenBags-href": "https://modesens.com/product/saint-laurent-fanny-crystal-embellished-mesh-shoulder-bag-1067-nerocrystal-46750090/",
+    "product_name": "SAINT LAURENT",
+    "product_description": "Fanny Crystal-embellished Mesh Shoulder Bag In 1067 Nerocrystal",
+    "product_womenBagPrice": "$3150",
+    "product_womenBagImg-src": "https://media.bergdorfgoodman.com/f_auto,q_auto,b_auto,c_pad/01/bg_4293523_100105_m"
+  },
+  {
+    "web-scraper-order": "1655212797-130",
+    "web-scraper-start-url": "https://modesens.com/shop-women-bags/",
+    "category_womenBags": "LOEWE Brown Puzzle Leather Shoulder Bag     $2148 - $2350 11 stores",
+    "category_womenBags-href": "https://modesens.com/product/loewe-brown-puzzle-leather-shoulder-bag-41600450/",
+    "product_name": "LOEWE",
+    "product_description": "Brown Puzzle Leather Shoulder Bag",
+    "product_womenBagPrice": "$2148 - $2350",
+    "product_womenBagImg-src": "https://image.s5a.com/is/image/saks/0400015118043_WARMDESERT?wid=972&hei=1296&fmt=jpeg"
+  },
+  {
+    "web-scraper-order": "1655212683-92",
+    "web-scraper-start-url": "https://modesens.com/shop-women-bags/",
+    "category_womenBags": "KHAITE Puffy Amelia Medium Padded Leather Tote In Black     $1062 - $2200 6 stores",
+    "category_womenBags-href": "https://modesens.com/product/khaite-puffy-amelia-medium-padded-leather-tote-black-34598462/",
+    "product_name": "KHAITE",
+    "product_description": "Puffy Amelia Medium Padded Leather Tote In Black",
+    "product_womenBagPrice": "$1062 - $2200",
+    "product_womenBagImg-src": "https://cdn.modesens.com/availability/38191789?w=400&"
+  },
+  {
+    "web-scraper-order": "1655212692-95",
+    "web-scraper-start-url": "https://modesens.com/shop-women-bags/",
+    "category_womenBags": "BOTTEGA VENETA Brown Padded Cassette Leather Shoulder Bag In Black     $3500 - $3900 6 stores",
+    "category_womenBags-href": "https://modesens.com/product/bottega-veneta-brown-padded-cassette-leather-shoulder-bag-black-24516466/",
+    "product_name": "BOTTEGA VENETA",
+    "product_description": "Brown Padded Cassette Leather Shoulder Bag In Black",
+    "product_womenBagPrice": "$3500 - $3900",
+    "product_womenBagImg-src": "https://cdn.modesens.com/product/24516466_5?w=400&"
+  },
+  {
+    "web-scraper-order": "1655212642-75",
+    "web-scraper-start-url": "https://modesens.com/shop-women-bags/",
+    "category_womenBags": "FENDI Logo-embossed Curved Shoulder Bag In Black     $1468 - $2100 5 stores",
+    "category_womenBags-href": "https://modesens.com/product/fendi-logo-embossed-curved-shoulder-bag-black-27555387/",
+    "product_name": "FENDI",
+    "product_description": "Logo-embossed Curved Shoulder Bag In Black",
+    "product_womenBagPrice": "$1468 - $2100",
+    "product_womenBagImg-src": "https://cdn.modesens.com/product/27555387_18?w=400&"
+  },
+  {
+    "web-scraper-order": "1655212695-96",
+    "web-scraper-start-url": "https://modesens.com/shop-women-bags/",
+    "category_womenBags": "BOTTEGA VENETA Medium Beak Triangle Flap Leather Shoulder Bag In Brown     $2700 - $2781 6 stores",
+    "category_womenBags-href": "https://modesens.com/product/bottega-veneta-medium-beak-triangle-flap-leather-shoulder-bag-brown-30300213/",
+    "product_name": "BOTTEGA VENETA",
+    "product_description": "Medium Beak Triangle Flap Leather Shoulder Bag In Brown",
+    "product_womenBagPrice": "$2700 - $2781",
+    "product_womenBagImg-src": "https://www.net-a-porter.com/variants/images/18706561955415402/in/w1000.jpg"
+  },
+  {
+    "web-scraper-order": "1655212723-106",
+    "web-scraper-start-url": "https://modesens.com/shop-women-bags/",
+    "category_womenBags": "LOEWE Balloon Colorblock Leather Bucket Bag In Black/tan     $2500 - $3150 6 stores",
+    "category_womenBags-href": "https://modesens.com/product/loewe-balloon-colorblock-leather-bucket-bag-blacktan-19370178/",
+    "product_name": "LOEWE",
+    "product_description": "Balloon Colorblock Leather Bucket Bag In Black/tan",
+    "product_womenBagPrice": "$2500 - $3150",
+    "product_womenBagImg-src": "https://cdn.modesens.com/product/19370178_18?w=400&"
+  },
+  {
+    "web-scraper-order": "1655212730-108",
+    "web-scraper-start-url": "https://modesens.com/shop-women-bags/",
+    "category_womenBags": "LOEWE + Paula's Ibiza Small Leather-trimmed Woven Raffia Tote In Natural/pecan     $685 - $690 6 stores",
+    "category_womenBags-href": "https://modesens.com/product/loewe-paula-ibiza-small-leather-trimmed-woven-raffia-tote-naturalpecan-20138014/",
+    "product_name": "LOEWE",
+    "product_description": "+ Paula's Ibiza Small Leather-trimmed Woven Raffia Tote In Natural/pecan",
+    "product_womenBagPrice": "$685 - $690",
+    "product_womenBagImg-src": "https://img.mytheresa.com/1000/1000/95/jpeg/catalog/product/11/P00475607.jpg"
+  },
+  {
+    "web-scraper-order": "1655212754-116",
+    "web-scraper-start-url": "https://modesens.com/shop-women-bags/",
+    "category_womenBags": "BOTTEGA VENETA Snap Intrecciato-leather Shoulder Bag In Grey     $2215 - $2500 7 stores",
+    "category_womenBags-href": "https://modesens.com/product/bottega-veneta-snap-intrecciato-leather-shoulder-bag-grey-39021073/",
+    "product_name": "BOTTEGA VENETA",
+    "product_description": "Snap Intrecciato-leather Shoulder Bag In Grey",
+    "product_womenBagPrice": "$2215 - $2500",
+    "product_womenBagImg-src": "https://cdn.modesens.com/product/39021073_1?w=400&"
+  },
+  {
+    "web-scraper-order": "1655212757-117",
+    "web-scraper-start-url": "https://modesens.com/shop-women-bags/",
+    "category_womenBags": "BOTTEGA VENETA Jodie Mini Knotted Intrecciato Leather Tote In Fountain & Gold     $2250 - $2500 7 stores",
+    "category_womenBags-href": "https://modesens.com/product/bottega-veneta-jodie-mini-knotted-intrecciato-leather-tote-fountain-and-gold-36066642/",
+    "product_name": "BOTTEGA VENETA",
+    "product_description": "Jodie Mini Knotted Intrecciato Leather Tote In Fountain & Gold",
+    "product_womenBagPrice": "$2250 - $2500",
+    "product_womenBagImg-src": "https://cdn-images.farfetch-contents.com/17/56/90/77/17569077_36464566_1000.jpg"
+  },
+  {
+    "web-scraper-order": "1655212740-111",
+    "web-scraper-start-url": "https://modesens.com/shop-women-bags/",
+    "category_womenBags": "SAINT LAURENT Vinyle Ysl Round Quilted Grain De Poudre Crossbody Bag In Black     $1275 - $1450 7 stores",
+    "category_womenBags-href": "https://modesens.com/product/saint-laurent-vinyle-ysl-round-quilted-grain-de-poudre-crossbody-bag-black-16087835/",
+    "product_name": "SAINT LAURENT",
+    "product_description": "Vinyle Ysl Round Quilted Grain De Poudre Crossbody Bag In Black",
+    "product_womenBagPrice": "$1275 - $1450",
+    "product_womenBagImg-src": "https://cdn.modesens.com/product/16087835_39?w=400&"
+  },
+  {
+    "web-scraper-order": "1655212776-123",
+    "web-scraper-start-url": "https://modesens.com/shop-women-bags/",
+    "category_womenBags": "SAINT LAURENT Small Raffia And Leather Bucket Bag In Nero & Naturale     $2067 - $2650 8 stores",
+    "category_womenBags-href": "https://modesens.com/product/saint-laurent-small-raffia-and-leather-bucket-bag-nero-and-naturale-43428291/",
+    "product_name": "SAINT LAURENT",
+    "product_description": "Small Raffia And Leather Bucket Bag In Nero & Naturale",
+    "product_womenBagPrice": "$2067 - $2650",
+    "product_womenBagImg-src": "https://img.mytheresa.com/1000/1000/95/jpeg/catalog/product/a1/P00647570.jpg"
+  },
+  {
+    "web-scraper-order": "1655212659-82",
+    "web-scraper-start-url": "https://modesens.com/shop-women-bags/",
+    "category_womenBags": "SAINT LAURENT Niki Ysl Monogram Medium Nubuck & Shearling Shoulder Bag In Tan/cream     $3350 6 stores",
+    "category_womenBags-href": "https://modesens.com/product/saint-laurent-niki-ysl-monogram-medium-nubuck-and-shearling-shoulder-bag-tancream-22473004/",
+    "product_name": "SAINT LAURENT",
+    "product_description": "Niki Ysl Monogram Medium Nubuck & Shearling Shoulder Bag In Tan/cream",
+    "product_womenBagPrice": "$3350",
+    "product_womenBagImg-src": "https://img.mytheresa.com.cn/1088/1088/66/jpeg/catalog/product/b0/P00589762.jpg"
+  },
+  {
+    "web-scraper-order": "1655212689-94",
+    "web-scraper-start-url": "https://modesens.com/shop-women-bags/",
+    "category_womenBags": "BOTTEGA VENETA Medium Beak Triangle Flap Leather Shoulder Bag In Yellow     $2100 - $2781 6 stores",
+    "category_womenBags-href": "https://modesens.com/product/bottega-veneta-medium-beak-triangle-flap-leather-shoulder-bag-yellow-29306892/",
+    "product_name": "BOTTEGA VENETA",
+    "product_description": "Medium Beak Triangle Flap Leather Shoulder Bag In Yellow",
+    "product_womenBagPrice": "$2100 - $2781",
+    "product_womenBagImg-src": "https://cdn.modesens.com/product/29306892_5?w=400&"
+  },
+  {
+    "web-scraper-order": "1655212746-113",
+    "web-scraper-start-url": "https://modesens.com/shop-women-bags/",
+    "category_womenBags": "SAINT LAURENT 80s Vanity Grain De Poudre Quilted Bucket Crossbody Bag In Black     $1585 - $1690 7 stores",
+    "category_womenBags-href": "https://modesens.com/product/saint-laurent-80s-vanity-grain-de-poudre-quilted-bucket-crossbody-bag-black-26276832/",
+    "product_name": "SAINT LAURENT",
+    "product_description": "80s Vanity Grain De Poudre Quilted Bucket Crossbody Bag In Black",
+    "product_womenBagPrice": "$1585 - $1690",
+    "product_womenBagImg-src": "https://cdn.modesens.com/product/26276832_18?w=400&"
+  },
+  {
+    "web-scraper-order": "1655212671-87",
+    "web-scraper-start-url": "https://modesens.com/shop-women-bags/",
+    "category_womenBags": "BOTTEGA VENETA Cassette Intrecciato-suede Cross-body Bag In Wasabi Gold     $4000 - $4600 6 stores",
+    "category_womenBags-href": "https://modesens.com/product/bottega-veneta-cassette-intrecciato-suede-cross-body-bag-wasabi-gold-38589993/",
+    "product_name": "BOTTEGA VENETA",
+    "product_description": "Cassette Intrecciato-suede Cross-body Bag In Wasabi Gold",
+    "product_womenBagPrice": "$4000 - $4600",
+    "product_womenBagImg-src": "https://res.cloudinary.com/ssenseweb/image/upload/b_white%2Cc_lpad%2Cg_center%2Ch_960%2Cw_960/c_scale%2Ch_680/f_auto%2Cdpr_1.0/221798F048065_1.jpg"
+  },
+  {
+    "web-scraper-order": "1655212675-89",
+    "web-scraper-start-url": "https://modesens.com/shop-women-bags/",
+    "category_womenBags": "SAINT LAURENT Small Lou Matelassé Patent Leather Camera Bag In Black     $1349 - $1650 6 stores",
+    "category_womenBags-href": "https://modesens.com/product/saint-laurent-small-lou-matelasse-patent-leather-camera-bag-black-31939719/",
+    "product_name": "SAINT LAURENT",
+    "product_description": "Small Lou Matelassé Patent Leather Camera Bag In Black",
+    "product_womenBagPrice": "$1349 - $1650",
+    "product_womenBagImg-src": "https://cdn.modesens.com/product/31939719_4?w=400&"
+  },
+  {
+    "web-scraper-order": "1655212751-115",
+    "web-scraper-start-url": "https://modesens.com/shop-women-bags/",
+    "category_womenBags": "TORY BURCH Miller Leather Shoulder Bag In Black     $314 - $507 7 stores",
+    "category_womenBags-href": "https://modesens.com/product/tory-burch-miller-leather-shoulder-bag-black-36506652/",
+    "product_name": "TORY BURCH",
+    "product_description": "Miller Leather Shoulder Bag In Black",
+    "product_womenBagPrice": "$314 - $507",
+    "product_womenBagImg-src": "https://cdn.modesens.com/product/36506652_2?w=400&"
+  },
+  {
+    "web-scraper-order": "1655212637-73",
+    "web-scraper-start-url": "https://modesens.com/shop-women-bags/",
+    "category_womenBags": "SAINT LAURENT Puffer Small Quilted Shearling Pouch Clutch Bag In Beige     $1277 - $1450 5 stores",
+    "category_womenBags-href": "https://modesens.com/product/saint-laurent-puffer-small-quilted-shearling-pouch-clutch-bag-beige-35211073/",
+    "product_name": "SAINT LAURENT",
+    "product_description": "Puffer Small Quilted Shearling Pouch Clutch Bag In Beige",
+    "product_womenBagPrice": "$1277 - $1450",
+    "product_womenBagImg-src": "https://cdn.modesens.com/product/35211073_2?w=400&"
+  },
+  {
+    "web-scraper-order": "1655212646-77",
+    "web-scraper-start-url": "https://modesens.com/shop-women-bags/",
+    "category_womenBags": "LOEWE Xl Flamenco Clutch Bag In Nappa Calfskin In Warm Desert     $3400 - $3600 6 stores",
+    "category_womenBags-href": "https://modesens.com/product/loewe-xl-flamenco-clutch-bag-in-nappa-calfskin-warm-desert-32650945/",
+    "product_name": "LOEWE",
+    "product_description": "Xl Flamenco Clutch Bag In Nappa Calfskin In Warm Desert",
+    "product_womenBagPrice": "$3400 - $3600",
+    "product_womenBagImg-src": "https://is4.fwrdassets.com/images/p/fw/p/LOEW-WY519_V1.jpg"
+  },
+  {
+    "web-scraper-order": "1655212703-99",
+    "web-scraper-start-url": "https://modesens.com/shop-women-bags/",
+    "category_womenBags": "BOTTEGA VENETA The Shell Small Leather Shoulder Bag In Green     $1824 - $2580 6 stores",
+    "category_womenBags-href": "https://modesens.com/product/bottega-veneta-the-shell-small-leather-shoulder-bag-green-25216380/",
+    "product_name": "BOTTEGA VENETA",
+    "product_description": "The Shell Small Leather Shoulder Bag In Green",
+    "product_womenBagPrice": "$1824 - $2580",
+    "product_womenBagImg-src": "https://cdn-images.farfetch-contents.com/16/45/85/83/16458583_32020585_1000.jpg"
+  },
+  {
+    "web-scraper-order": "1655212661-83",
+    "web-scraper-start-url": "https://modesens.com/shop-women-bags/",
+    "category_womenBags": "BOTTEGA VENETA Mini Pouch Mop Chenille Crossbody Bag In Yellow     $1731 - $2350 6 stores",
+    "category_womenBags-href": "https://modesens.com/product/bottega-veneta-mini-pouch-mop-chenille-crossbody-bag-yellow-38909682/",
+    "product_name": "BOTTEGA VENETA",
+    "product_description": "Mini Pouch Mop Chenille Crossbody Bag In Yellow",
+    "product_womenBagPrice": "$1731 - $2350",
+    "product_womenBagImg-src": "https://cdn.modesens.com/availability/47396293?w=400&"
+  }
+]
