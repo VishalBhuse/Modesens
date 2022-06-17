@@ -16,7 +16,7 @@ import {
 } from "@chakra-ui/react";
 import axios from "axios";
 import React, { useEffect, useState } from "react";
-import { BsSearch } from "react-icons/bs";
+import { BsArrowRightCircleFill, BsFillArrowLeftCircleFill, BsSearch } from "react-icons/bs";
 import { Filters } from "./Filters";
 import styled from "./products.module.css";
 import { Link, useParams } from "react-router-dom";
@@ -446,27 +446,23 @@ const Products = () => {
         </p>
         <div className={styled.pagination}>
           <div className={styled.paginationno}>
-            <Button
-              size={"35px"}
-              width={"55px"}
+            <button
               onClick={() => {
                 if (page > 1) return setpage(page - 1);
               }}
             >
-              Prive
-            </Button>
-            <Button size={"25px"} width={"55px"} disabled="true">
+              <BsFillArrowLeftCircleFill />
+            </button>
+            <span >
               {page}
-            </Button>
-            <Button
-              size={"25px"}
-              width={"55px"}
+            </span>
+            <button
               onClick={() => {
                 if (totalpro > 20 * page) return setpage(page + 1);
               }}
             >
-              Next
-            </Button>
+            <BsArrowRightCircleFill />
+            </button>
           </div>
           <div className={styled.paginationimages}>
             {grid === 4 ? (
@@ -564,9 +560,12 @@ const Products = () => {
               style={{ gridTemplateColumns: `repeat(${grid}, 1fr)` }}
             >
               {product.map((item) => (
-                <Link to={`/product/${cate}/${item.web_scraper_order}`}>
-                  <div className={styled.product1img} key={1}>
-                    <span>♡</span>
+                <div className={styled.product1img} key={1}>
+                  
+                    <span onClick={()=>{
+                      axios.post("http://localhost:8080/like",item).then((res)=>console.log(res))
+                    }}>♡</span>
+                    <Link to={`/product/${cate}/${item.web_scraper_order}`}>
 
                     <img src={item.product_img_src} alt="ab" />
                     <div className={styled.product1quckview}>
@@ -591,8 +590,8 @@ const Products = () => {
                         <Text fontSize={"12px"}>{item.brand_store}</Text>
                       </VStack>
                     </Center>
-                  </div>
                 </Link>
+                  </div>
               ))}
             </div>
           </>

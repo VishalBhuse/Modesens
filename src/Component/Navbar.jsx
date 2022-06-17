@@ -1,4 +1,4 @@
- import {
+import {
   Box,
   Flex,
   Text,
@@ -23,10 +23,10 @@ import { AiOutlineUser } from "react-icons/ai";
 import { VscLock } from "react-icons/vsc";
 import { FiSearch } from "react-icons/fi";
 import { Link } from "react-router-dom";
-import React, { useEffect, useState } from 'react';
-import styles from './Login.module.css';
-import Modal from 'react-modal';
-import GoogleButton from 'react-google-button';
+import React, { useEffect, useState } from "react";
+import styles from "./Login.module.css";
+import Modal from "react-modal";
+import GoogleButton from "react-google-button";
 
 import { AiFillEye, AiFillEyeInvisible } from "react-icons/ai";
 import { useNavigate } from "react-router-dom";
@@ -37,72 +37,62 @@ export default function Navbar() {
   const { colorMode, toggleColorMode } = useColorMode();
   const navigate = useNavigate();
 
-  const [email, setEmail] = useState("")
-  const [password, setPassword] = useState("")
-  const [error, setError] = useState("")
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [error, setError] = useState("");
 
+  const [passwordType, setPasswordType] = useState("password");
 
-  const [passwordType, setPasswordType] = useState('password')
+  const { logout, user, setUser } = UserAuth();
 
-  const {logout,user,setUser} = UserAuth()
-
-  const [modalOpen, setModalOpen] = useState(false)
+  const [modalOpen, setModalOpen] = useState(false);
   // const {login}= useUserAuth();
-  const {googleSignIn}=UserAuth();
+  const { googleSignIn } = UserAuth();
 
   const handleChange = () => {
-    if (passwordType == 'password') {
-      setPasswordType('text')
+    if (passwordType == "password") {
+      setPasswordType("text");
+    } else {
+      setPasswordType("password");
     }
-    else {
-      setPasswordType('password')
-    }
-  }
+  };
 
-
-  const handlegoogleSignIn= async ()=>{
+  const handlegoogleSignIn = async () => {
     try {
       await googleSignIn();
-    } catch (error) {
-      
-    }
-  }
+    } catch (error) {}
+  };
 
-  const handleSignOut = async()=>{
+  const handleSignOut = async () => {
     try {
-      await logout()
+      await logout();
     } catch (error) {
-      console.log(error)
+      console.log(error);
     }
-  }
+  };
 
-  const handleEmailLogin=()=>{
+  const handleEmailLogin = () => {
     // console.log(email,password)
-    var logUser={
-      email:email,
-      password:password
-    }
-    setUser(logUser)
-    setEmail("")
-    setPassword("")
-    setModalOpen(false)
-  }
+    var logUser = {
+      email: email,
+      password: password,
+    };
+    setUser(logUser);
+    setEmail("");
+    setPassword("");
+    setModalOpen(false);
+  };
 
   useEffect(() => {
-    
-      const modal = setTimeout(()=>{
-          setModalOpen(true)
-      },2000);
-    
-    
-    return ()=> clearTimeout(modal)
-   
-  }, [])
+    const modal = setTimeout(() => {
+      setModalOpen(true);
+    }, 2000);
 
-
+    return () => clearTimeout(modal);
+  }, []);
 
   return (
-    <div style={{ position: "sticky", top: 0, zIndex:99 }}>
+    <div style={{ position: "sticky", top: 0, zIndex: 99 }}>
       <Box>
         <Flex
           bg={useColorModeValue("white", "gray.800")}
@@ -185,7 +175,7 @@ export default function Navbar() {
                   <Link to={"#"}> My Alerts </Link>
                 </MenuItem>
                 <MenuItem fontWeight={"600"}>
-                  <Link to={"#"}> My Recently  Viewd</Link>
+                  <Link to={"#"}> My Recently Viewd</Link>
                 </MenuItem>
                 <hr />
                 <MenuItem fontWeight={"600"}>
@@ -195,7 +185,7 @@ export default function Navbar() {
                   <Link to={"#"}> My Orders </Link>
                 </MenuItem>
                 <MenuItem fontWeight={"600"}>
-                  <Link to={"#"}> My Save Searches</Link> 
+                  <Link to={"#"}> My Save Searches</Link>
                 </MenuItem>
                 <MenuItem fontWeight={"600"}>
                   <Link to={"#"}> My Loyality </Link>
@@ -210,66 +200,127 @@ export default function Navbar() {
                   <Link to={"#"}> Setting </Link>
                 </MenuItem>
                 <hr />
-                {
-                user ? <MenuItem onClick={handleSignOut} fontWeight={"600"}>Logout</MenuItem> : <MenuItem onClick={() => setModalOpen(true)} fontWeight={"600"}>Login</MenuItem>
-              }
+                {user ? (
+                  <MenuItem onClick={handleSignOut} fontWeight={"600"}>
+                    Logout
+                  </MenuItem>
+                ) : (
+                  <MenuItem
+                    onClick={() => setModalOpen(true)}
+                    fontWeight={"600"}
+                  >
+                    Login
+                  </MenuItem>
+                )}
 
-                <Modal style={
-                {
-                  overlay: {
-                    background: 'rgba(255, 255, 255, 0.2)',
-                    boxShadow: '0 4px 30px rgba(0, 0, 0, 0.1)',
-                    backdropFilter: 'blur(5px)'
-                  },
-                  content: {
-                    width: '60%',
-                    margin: 'auto',
-                    textAlign: 'center',
-                    // padding:'5%'
+                <Modal
+                  style={{
+                    overlay: {
+                      background: "rgba(255, 255, 255, 0.2)",
+                      boxShadow: "0 4px 30px rgba(0, 0, 0, 0.1)",
+                      backdropFilter: "blur(5px)",
+                      zIndex:99
+                    },
+                    content: {
+                      width: "60%",
+                      margin: "auto",
+                      textAlign: "center",
+                      // padding:'5%'
+                    },
+                  }}
+                  onRequestClose={() => setModalOpen(false)}
+                  isOpen={modalOpen}
+                >
+                  <p
+                    onClick={() => setModalOpen(false)}
+                    className={styles.close}
+                  >
+                    &times;
+                  </p>
+                  <Image
+                    className={styles.logo}
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfI2p7YKkg-T8uAceBDRoAWhiqVQhYAZi__5zXyA2bD_DhffvrEPMIinaTTcOwY4-tMg&usqp=CAU"
+                    alt="Dan Abramov"
+                  />
 
-                  }
-                }
-              } onRequestClose={() => setModalOpen(false)} isOpen={modalOpen}>
-                <p onClick={() => setModalOpen(false)} className={styles.close}>&times;</p>
-                <Image className={styles.logo} src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfI2p7YKkg-T8uAceBDRoAWhiqVQhYAZi__5zXyA2bD_DhffvrEPMIinaTTcOwY4-tMg&usqp=CAU' alt='Dan Abramov' />
+                  <h1
+                    style={{
+                      fontWeight: "bolder",
+                      fontSize: "larger",
+                      marginTop: "20px",
+                    }}
+                  >
+                    Create an Account
+                  </h1>
+                  <h3>
+                    Compare across 500+ stores to find <br /> the best price.
+                  </h3>
+                  <Input
+                    value={email}
+                    required
+                    onChange={(e) => setEmail(e.target.value)}
+                    style={{ width: "70%", marginBottom: "2%" }}
+                    className={styles.inputBox}
+                    placeholder="Email"
+                  />
 
-                <h1 style={{ fontWeight: 'bolder', fontSize: 'larger', marginTop: '20px' }}>Create an Account</h1>
-                <h3>Compare across 500+ stores
-                  to find <br /> the best price.</h3>
-                <Input value={email} required onChange={(e)=> setEmail(e.target.value)} style={{width: '70%', marginBottom:'2%'}} className={styles.inputBox} placeholder='Email' />
+                  <div
+                    style={{
+                      display: "flex",
+                      flexDirection: "row",
+                      width: "70%",
+                      margin: "auto",
+                    }}
+                  >
+                    <Input
+                      style={{ margin: "auto" }}
+                      value={password}
+                      onChange={(e) => setPassword(e.target.value)}
+                      type={passwordType}
+                      className={styles.inputBox}
+                      placeholder="Password"
+                    />
 
-                <div style={{display:'flex', flexDirection: 'row', width: '70%', margin:'auto'}}>
-                  <Input style={{ margin: 'auto' }} value={password} onChange={(e)=>setPassword(e.target.value)} type={passwordType} className={styles.inputBox} placeholder='Password' />
+                    <Button style={{}} onClick={handleChange}>
+                      {passwordType == "password" ? (
+                        <AiFillEyeInvisible />
+                      ) : (
+                        <AiFillEye />
+                      )}
+                    </Button>
+                  </div>
 
-                  <Button style={{}} onClick={handleChange}>
-
-                    {passwordType == 'password' ? <AiFillEyeInvisible /> : <AiFillEye />}
-
+                  <Button
+                    onClick={handleEmailLogin}
+                    style={{
+                      backgroundColor: "black",
+                      color: "white",
+                      marginTop: "3%",
+                    }}
+                    mr={3}
+                  >
+                    Login
                   </Button>
-                </div>
 
-                <Button onClick={handleEmailLogin}   style={{backgroundColor: 'black', color: 'white', marginTop:'3%'}} mr={3}>
-              Login
-            </Button>
-            
-            <h4 className={styles.line}>
-            or
-          </h4>
-          <br />
-          <div>
-              <GoogleButton onClick={handlegoogleSignIn} style={{margin: 'auto'}}  type='light'/>
-              
+                  <h4 className={styles.line}>or</h4>
+                  <br />
+                  <div>
+                    <GoogleButton
+                      onClick={handlegoogleSignIn}
+                      style={{ margin: "auto" }}
+                      type="light"
+                    />
+                  </div>
+                  <br />
 
-          </div>
-          <br />
-          
-
-          <Link to='/login'>Already have an account? Please sign in</Link>
-          <p style={{marginTop:'13px'}}>By creating an account, I agree to <br /> the Terms Of Use and the Privacy Policy</p>
-
-              </Modal>
-
-
+                  <Link to="/login">
+                    Already have an account? Please sign in
+                  </Link>
+                  <p style={{ marginTop: "13px" }}>
+                    By creating an account, I agree to <br /> the Terms Of Use
+                    and the Privacy Policy
+                  </p>
+                </Modal>
               </MenuList>
             </Menu>
 
@@ -325,7 +376,7 @@ const DesktopNav = () => {
             <Text
               fontSize={"13px"}
               fontWeight={"500"}
-             border="1px inherit"
+              border="1px inherit"
               _hover={{
                 fontSize: "13px",
                 borderBottom: "1px solid red",
@@ -336,8 +387,8 @@ const DesktopNav = () => {
           </Link>
           <Link to={"/products/2"}>
             <Text
-             border="1px inherit"
-             _hover={{
+              border="1px inherit"
+              _hover={{
                 fontSize: "13px",
                 borderBottom: "1px solid red",
               }}
@@ -349,8 +400,8 @@ const DesktopNav = () => {
           </Link>
           <Link to={"/products/3"}>
             <Text
-             border="1px inherit"
-             _hover={{
+              border="1px inherit"
+              _hover={{
                 fontSize: "13px",
                 borderBottom: "1px solid red",
               }}
@@ -362,8 +413,8 @@ const DesktopNav = () => {
           </Link>
           <Link to={"/products/4"}>
             <Text
-             border="1px inherit"
-             _hover={{
+              border="1px inherit"
+              _hover={{
                 fontSize: "13px",
                 borderBottom: "1px solid red",
               }}
@@ -375,8 +426,8 @@ const DesktopNav = () => {
           </Link>
           <Link to={"#"}>
             <Text
-             border="1px inherit"
-             _hover={{
+              border="1px inherit"
+              _hover={{
                 fontSize: "13px",
                 borderBottom: "1px solid red",
               }}
@@ -388,8 +439,8 @@ const DesktopNav = () => {
           </Link>
           <Link to={"/products/5"}>
             <Text
-             border="1px inherit"
-             _hover={{
+              border="1px inherit"
+              _hover={{
                 fontSize: "13px",
                 borderBottom: "1px solid red",
               }}
@@ -401,8 +452,8 @@ const DesktopNav = () => {
           </Link>
           <Link to={"#"}>
             <Text
-             border="1px inherit"
-             _hover={{
+              border="1px inherit"
+              _hover={{
                 fontSize: "13px",
                 borderBottom: "1px solid red",
               }}
@@ -413,12 +464,14 @@ const DesktopNav = () => {
             </Text>
           </Link>
           <Link to={"#"}>
-            <Text fontSize={"13px"} fontWeight={"500"}
-             border="1px inherit"
-             _hover={{
-               fontSize: "13px",
-               borderBottom: "1px solid red",
-             }}
+            <Text
+              fontSize={"13px"}
+              fontWeight={"500"}
+              border="1px inherit"
+              _hover={{
+                fontSize: "13px",
+                borderBottom: "1px solid red",
+              }}
             >
               WHY MODESENS
             </Text>
