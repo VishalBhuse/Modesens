@@ -1,13 +1,12 @@
 .product1img {
-    border: 1px solid rgb(209, 203, 203) !important;
+    border: 1px solid rgb(240, 240, 240) !important;
     padding: 5px !important;
-    height: 70vh;
+    height: 80vh;
   }
   .product1img img {
-    width: 100%;
+    width: auto;
     height: 60%;
-    /* padding: 20px; */
-    /* border: 1px solid red; */
+    margin: 20px auto;
   }
   .product1quckview {
     text-align: center;
@@ -22,14 +21,15 @@
   }
   .product1img span {
     font-size: 25px;
-    float: right;
+    margin-left: 90%;
+    cursor: pointer;
+    color: red;
   }
   .product1img:hover .product1quckview {
     display: block !important;
   }
   .productmean {
     box-sizing: border-box;
-    /* border: 1px solid red; */
     width: 95%;
     margin: auto;
     display: flex;
@@ -45,8 +45,6 @@
   .productgried {
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    /* border: 1px solid red; */
   }
   .headline{
       font-size: 1.71rem;
@@ -62,44 +60,39 @@
       box-sizing: border-box;
       margin-top: 40px;
       margin-bottom: 10px;
-      /* background-color: antiquewhite; */
+      height: 24px;
       display: flex;
-  }
-  .paginationno{
+    }
+    .paginationno{
+      display: flex;
+      justify-content: center;
+      align-items: center;
       box-sizing: border-box;
-      width: 70%;
+      width: 80%;
       text-align: center;
-      /* border: 1px solid gray; */
   }
   .paginationimages{
-      width: 20%;
-      /* border: 1px solid gray; */
+      width: 10%;
       gap: 15px;
-      /* padding-right: 15px; */
       justify-content: right;
       display: flex;
   }
   .paginationoption{
       width: 10%;
-      /* border: 1px solid gray; */
       text-align: right;
-      /* margin-right: 10px; */
   }
   .paginationoption select{
       width: 100%;
   }
   .brandimage{
-      /* border: 1px solid red; */
       box-sizing: border-box;
       height: 120px;
   }
   .pagepath{
-    /* border: 1px solid green; */
     text-transform: uppercase;
     font-size: 12px;
     font-weight: 600;
     line-height: 20px;
-    /* padding-left: 10px; */
   }
   .filteroption select{
       width: 100%;
@@ -120,4 +113,14 @@
   }
   .searchicon{
     padding: 10px;
+  }
+  .paginationno button{
+    font-size: 25px;
+    margin: auto 15px ;
+    
+  }
+  .paginationno span{
+    font-size: 20px;
+    font-weight: 700;
+
   }

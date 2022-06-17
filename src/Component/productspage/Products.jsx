@@ -6,17 +6,21 @@ import {
   AccordionPanel,
   Box,
   Button,
+  ButtonGroup,
   Center,
+  Grid,
+  GridItem,
   Heading,
   Text,
   VStack,
 } from "@chakra-ui/react";
 import axios from "axios";
 import React, { useEffect, useState } from "react";
-import { BsSearch } from "react-icons/bs";
+import { BsArrowRightCircleFill, BsFillArrowLeftCircleFill, BsSearch } from "react-icons/bs";
 import { Filters } from "./Filters";
 import styled from "./products.module.css";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
+import { Skeleton, SkeletonCircle, SkeletonText } from "@chakra-ui/react";
 
 const Products = () => {
   let { id } = useParams();
@@ -174,52 +178,67 @@ const Products = () => {
   const headlinearr = [
     {
       headline: "Womens Fashion & Designer Products",
-      json: "women.json",
+      json: "women",
     },
     {
       headline: "Designer Clothing for Men",
-      json: "men_clothing.json",
+      json: "men_clothing",
     },
     {
       headline: "Designer Beauty",
-      json: "beauty.json",
+      json: "beauty",
     },
     {
       headline: "Baby Boys Fashion & Designer Products",
-      json: "baby_boys.json",
+      json: "baby_boys",
     },
     {
       headline: "Designer Home Decor",
-      json: "homeDecor.json",
+      json: "homeDecor",
     },
     {
       headline: "Designer Bath",
-      json: "bath.json",
+      json: "bath",
     },
     {
       headline: "Designer Accessories for Men",
-      json: "men_accessories.json",
+      json: "men_accessories",
     },
 
     {
       headline: "Designer Grooming for Men",
-      json: "men_grooming.json",
+      json: "men_grooming",
     },
     {
       headline: "Designer Bags for Women",
-      json: "women_bags.json",
+      json: "women_bags",
     },
   ];
 
+  let cate = headlinearr[id].json;
+
   const [product, setproduct] = useState([]);
+  const [loading, setloading] = useState(true);
+  const [grid, setgrid] = useState(4);
+  const [page, setpage] = useState(1);
+  const [totalpro, settotalpro] = useState("");
+  console.log(grid);
   useEffect(() => {
     axios
       .get(
-        `https://unit4-335f9-default-rtdb.firebaseio.com/${headlinearr[id].json}`
+        `http://localhost:8080/${headlinearr[id].json}?_page=${page}&_limit=20`
       )
-      .then((res) => setproduct(res.data))
+      .then((res) => {
+        settotalpro(res.headers["x-total-count"]);
+        setproduct(res.data);
+        setloading(false);
+      })
       .catch((err) => console.log(err));
-  }, [id]);
+
+    return () => {
+      setloading(true);
+    };
+  }, [id, page]);
 
   return (
     <div className={styled.productmean}>
@@ -426,23 +445,70 @@ const Products = () => {
           ModeSens.
         </p>
         <div className={styled.pagination}>
-          <div className={styled.paginationno}>1 2 3 .... {">"}</div>
+          <div className={styled.paginationno}>
+            <button
+              onClick={() => {
+                if (page > 1) return setpage(page - 1);
+              }}
+            >
+              <BsFillArrowLeftCircleFill />
+            </button>
+            <span >
+              {page}
+            </span>
+            <button
+              onClick={() => {
+                if (totalpro > 20 * page) return setpage(page + 1);
+              }}
+            >
+            <BsArrowRightCircleFill />
+            </button>
+          </div>
           <div className={styled.paginationimages}>
-            {/* <img src="https://cdn.modesens.com/static/img/20210908column4.svg"  /> */}
-            <img
-              src="https://cdn.modesens.com/static/img/20210908column4_active.svg"
-              alt="a"
-            />
-            <img
-              src="https://cdn.modesens.com/static/img/20210908column3.svg"
-              alt="a"
-            />
-            {/* <img src="https://cdn.modesens.com/static/img/20210908column3_active.svg"  /> */}
-            <img
-              src="https://cdn.modesens.com/static/img/20210908column2.svg"
-              alt="a"
-            />
-            {/* <img src="https://cdn.modesens.com/static/img/20210908column2_active.svg"  /> */}
+            {grid === 4 ? (
+              <img
+                src="https://cdn.modesens.com/static/img/20210908column4_active.svg"
+                alt="a"
+              />
+            ) : (
+              <img
+                src="https://cdn.modesens.com/static/img/20210908column4.svg"
+                alt="a"
+                onClick={() => {
+                  setgrid(4);
+                }}
+              />
+            )}
+
+            {grid === 3 ? (
+              <img
+                src="https://cdn.modesens.com/static/img/20210908column3_active.svg"
+                alt="a"
+              />
+            ) : (
+              <img
+                src="https://cdn.modesens.com/static/img/20210908column3.svg"
+                alt="a"
+                onClick={() => {
+                  setgrid(3);
+                }}
+              />
+            )}
+
+            {grid === 2 ? (
+              <img
+                src="https://cdn.modesens.com/static/img/20210908column2_active.svg"
+                alt="a"
+              />
+            ) : (
+              <img
+                src="https://cdn.modesens.com/static/img/20210908column2.svg"
+                alt="a"
+                onClick={() => {
+                  setgrid(2);
+                }}
+              />
+            )}
           </div>
           <div className={styled.paginationoption}>
             <select name="" id="">
@@ -457,36 +523,79 @@ const Products = () => {
             </select>
           </div>
         </div>
-        <div className={styled.productgried}>
-          {product.map((item) => (
-            <div className={styled.product1img} key={1}>
-              <span>♡</span>
-              <img src={item.product_img_src} alt="ab" />
-              <div className={styled.product1quckview}>
-                <h2>QUICK VIEW</h2>
-              </div>
-              <Center>
-                <VStack>
-                  <Text fontWeight={"600"} fontSize={"15px"} mt={"1rem"}>
-                    {item.product_name}
-                  </Text>
-                  <Text
-                    color={"#A3A3A3"}
-                    textAlign={"center"}
-                    fontSize={"12px"}
-                    noOfLines={1}
-                  >
-                    {item.product_description}
-                  </Text>
-                  <Text fontSize={"12px"} fontWeight={"500"}>
-                    {item.product_price}
-                  </Text>
-                  <Text fontSize={"12px"}>{item.brand_store}</Text>
-                </VStack>
-              </Center>
+        {loading ? (
+          <>
+            <Grid templateColumns="repeat(4, 1fr)" gap={3}>
+              <GridItem w="100%" h="400">
+                <Skeleton height="400px" />
+              </GridItem>
+              <GridItem w="100%" h="400">
+                <Skeleton height="400px" />
+              </GridItem>
+              <GridItem w="100%" h="400">
+                <Skeleton height="400px" />
+              </GridItem>
+              <GridItem w="100%" h="400">
+                <Skeleton height="400px" />
+              </GridItem>
+
+              <GridItem w="100%" h="400">
+                <Skeleton height="400px" />
+              </GridItem>
+              <GridItem w="100%" h="400">
+                <Skeleton height="400px" />
+              </GridItem>
+              <GridItem w="100%" h="400">
+                <Skeleton height="400px" />
+              </GridItem>
+              <GridItem w="100%" h="400">
+                <Skeleton height="400px" />
+              </GridItem>
+            </Grid>
+          </>
+        ) : (
+          <>
+            <div
+              className={styled.productgried}
+              style={{ gridTemplateColumns: `repeat(${grid}, 1fr)` }}
+            >
+              {product.map((item) => (
+                <div className={styled.product1img} key={1}>
+                  
+                    <span onClick={()=>{
+                      axios.post("http://localhost:8080/like",item).then((res)=>console.log(res))
+                    }}>♡</span>
+                    <Link to={`/product/${cate}/${item.web_scraper_order}`}>
+
+                    <img src={item.product_img_src} alt="ab" />
+                    <div className={styled.product1quckview}>
+                      <h2>QUICK VIEW</h2>
+                    </div>
+                    <Center>
+                      <VStack>
+                        <Text fontWeight={"600"} fontSize={"15px"} mt={"1rem"}>
+                          {item.product_name}
+                        </Text>
+                        <Text
+                          color={"#A3A3A3"}
+                          textAlign={"center"}
+                          fontSize={"12px"}
+                          noOfLines={1}
+                        >
+                          {item.product_description}
+                        </Text>
+                        <Text fontSize={"12px"} fontWeight={"500"}>
+                          {item.product_price}
+                        </Text>
+                        <Text fontSize={"12px"}>{item.brand_store}</Text>
+                      </VStack>
+                    </Center>
+                </Link>
+                  </div>
+              ))}
             </div>
-          ))}
-        </div>
+          </>
+        )}
       </div>
     </div>
   );
