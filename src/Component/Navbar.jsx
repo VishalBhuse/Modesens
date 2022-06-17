@@ -1,4 +1,4 @@
-import {
+ import {
   Box,
   Flex,
   Text,
@@ -16,16 +16,90 @@ import {
   VStack,
   HStack,
   Input,
+  Button,
 } from "@chakra-ui/react";
 import { HamburgerIcon, CloseIcon, MoonIcon, SunIcon } from "@chakra-ui/icons";
 import { AiOutlineUser } from "react-icons/ai";
 import { VscLock } from "react-icons/vsc";
 import { FiSearch } from "react-icons/fi";
 import { Link } from "react-router-dom";
+import React, { useEffect, useState } from 'react';
+import styles from './Login.module.css';
+import Modal from 'react-modal';
+import GoogleButton from 'react-google-button';
+
+import { AiFillEye, AiFillEyeInvisible } from "react-icons/ai";
+import { useNavigate } from "react-router-dom";
+import { UserAuth } from "./Context/AuthContext";
 
 export default function Navbar() {
   const { isOpen, onToggle } = useDisclosure();
   const { colorMode, toggleColorMode } = useColorMode();
+  const navigate = useNavigate();
+
+  const [email, setEmail] = useState("")
+  const [password, setPassword] = useState("")
+  const [error, setError] = useState("")
+
+
+  const [passwordType, setPasswordType] = useState('password')
+
+  const {logout,user,setUser} = UserAuth()
+
+  const [modalOpen, setModalOpen] = useState(false)
+  // const {login}= useUserAuth();
+  const {googleSignIn}=UserAuth();
+
+  const handleChange = () => {
+    if (passwordType == 'password') {
+      setPasswordType('text')
+    }
+    else {
+      setPasswordType('password')
+    }
+  }
+
+
+  const handlegoogleSignIn= async ()=>{
+    try {
+      await googleSignIn();
+    } catch (error) {
+      
+    }
+  }
+
+  const handleSignOut = async()=>{
+    try {
+      await logout()
+    } catch (error) {
+      console.log(error)
+    }
+  }
+
+  const handleEmailLogin=()=>{
+    // console.log(email,password)
+    var logUser={
+      email:email,
+      password:password
+    }
+    setUser(logUser)
+    setEmail("")
+    setPassword("")
+    setModalOpen(false)
+  }
+
+  useEffect(() => {
+    
+      const modal = setTimeout(()=>{
+          setModalOpen(true)
+      },2000);
+    
+    
+    return ()=> clearTimeout(modal)
+   
+  }, [])
+
+
 
   return (
     <div style={{ position: "sticky", top: 0, zIndex:99 }}>
@@ -136,9 +210,66 @@ export default function Navbar() {
                   <Link to={"#"}> Setting </Link>
                 </MenuItem>
                 <hr />
-                <MenuItem fontWeight={"600"}>
-                  <Link to={"#"}>Log in</Link>
-                </MenuItem>
+                {
+                user ? <MenuItem onClick={handleSignOut} fontWeight={"600"}>Logout</MenuItem> : <MenuItem onClick={() => setModalOpen(true)} fontWeight={"600"}>Login</MenuItem>
+              }
+
+                <Modal style={
+                {
+                  overlay: {
+                    background: 'rgba(255, 255, 255, 0.2)',
+                    boxShadow: '0 4px 30px rgba(0, 0, 0, 0.1)',
+                    backdropFilter: 'blur(5px)'
+                  },
+                  content: {
+                    width: '60%',
+                    margin: 'auto',
+                    textAlign: 'center',
+                    // padding:'5%'
+
+                  }
+                }
+              } onRequestClose={() => setModalOpen(false)} isOpen={modalOpen}>
+                <p onClick={() => setModalOpen(false)} className={styles.close}>&times;</p>
+                <Image className={styles.logo} src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfI2p7YKkg-T8uAceBDRoAWhiqVQhYAZi__5zXyA2bD_DhffvrEPMIinaTTcOwY4-tMg&usqp=CAU' alt='Dan Abramov' />
+
+                <h1 style={{ fontWeight: 'bolder', fontSize: 'larger', marginTop: '20px' }}>Create an Account</h1>
+                <h3>Compare across 500+ stores
+                  to find <br /> the best price.</h3>
+                <Input value={email} required onChange={(e)=> setEmail(e.target.value)} style={{width: '70%', marginBottom:'2%'}} className={styles.inputBox} placeholder='Email' />
+
+                <div style={{display:'flex', flexDirection: 'row', width: '70%', margin:'auto'}}>
+                  <Input style={{ margin: 'auto' }} value={password} onChange={(e)=>setPassword(e.target.value)} type={passwordType} className={styles.inputBox} placeholder='Password' />
+
+                  <Button style={{}} onClick={handleChange}>
+
+                    {passwordType == 'password' ? <AiFillEyeInvisible /> : <AiFillEye />}
+
+                  </Button>
+                </div>
+
+                <Button onClick={handleEmailLogin}   style={{backgroundColor: 'black', color: 'white', marginTop:'3%'}} mr={3}>
+              Login
+            </Button>
+            
+            <h4 className={styles.line}>
+            or
+          </h4>
+          <br />
+          <div>
+              <GoogleButton onClick={handlegoogleSignIn} style={{margin: 'auto'}}  type='light'/>
+              
+
+          </div>
+          <br />
+          
+
+          <Link to='/login'>Already have an account? Please sign in</Link>
+          <p style={{marginTop:'13px'}}>By creating an account, I agree to <br /> the Terms Of Use and the Privacy Policy</p>
+
+              </Modal>
+
+
               </MenuList>
             </Menu>
 

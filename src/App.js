@@ -6,17 +6,18 @@ import Product from "./Component/Product";
 import Footer from "./Component/Footer";
 import Login from "./Component/Login";
 import Dashboard from "./Component/Dashboard";
-<<<<<<< HEAD
+
 import Likes from "./Component/Likes";
-=======
+
 import Products from "./Component/productspage/Products";
 import Homeindex from "./Component/Homeindex";
+import { AuthContextProvider } from "./Component/Context/AuthContext";
 // import { Filters } from "./Component/productspage/Filters";
->>>>>>> 68b7a48b7e52d2f31db8307ded3ea10cdf1236ca
 
 function App() {
   return (
     <>
+    <AuthContextProvider>
       <Navbar />
       <Routes>
         <Route path="/" element={<Homeindex />} />
@@ -28,6 +29,7 @@ function App() {
       </Routes>
 
       <Footer />
+      </AuthContextProvider>
     </>
   );
 }
