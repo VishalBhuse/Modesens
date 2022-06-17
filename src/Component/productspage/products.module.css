@@ -1,11 +1,15 @@
 .product1img {
-    border: 1px solid rgb(209, 203, 203) !important;
+    border: 1px solid rgb(240, 240, 240) !important;
     padding: 5px !important;
-    height: 70vh;
+    height: 80vh;
+    /* height: auto; */
   }
   .product1img img {
-    width: 100%;
+    /* width: 100%; */
+    width: auto;
     height: 60%;
+    margin: 20px auto;
+    /* height: auto; */
     /* padding: 20px; */
     /* border: 1px solid red; */
   }
@@ -22,7 +26,9 @@
   }
   .product1img span {
     font-size: 25px;
-    float: right;
+    /* float: right; */
+    /* text-align: center; */
+    margin-left: 90%;
   }
   .product1img:hover .product1quckview {
     display: block !important;
@@ -45,7 +51,7 @@
   .productgried {
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    /* grid-template-columns: repeat(4, 1fr); */
     /* border: 1px solid red; */
   }
   .headline{
