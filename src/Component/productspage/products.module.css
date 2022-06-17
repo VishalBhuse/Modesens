@@ -1,0 +1,123 @@
+.product1img {
+    border: 1px solid rgb(209, 203, 203) !important;
+    padding: 5px !important;
+    height: 70vh;
+  }
+  .product1img img {
+    width: 100%;
+    height: 60%;
+    /* padding: 20px; */
+    /* border: 1px solid red; */
+  }
+  .product1quckview {
+    text-align: center;
+    padding: 7px;
+    color: #000;
+    border: 1px solid rgb(168, 168, 168);
+    display: none;
+    margin-top: -40px;
+    position: relative;
+    background: hsla(0, 0%, 100%, 0.6);
+    z-index: 99;
+  }
+  .product1img span {
+    font-size: 25px;
+    float: right;
+  }
+  .product1img:hover .product1quckview {
+    display: block !important;
+  }
+  .productmean {
+    box-sizing: border-box;
+    /* border: 1px solid red; */
+    width: 95%;
+    margin: auto;
+    display: flex;
+  }
+  .productfiltermran {
+    width: 20%;
+    padding-right: 5px;
+  }
+  .productside {
+    width: 80%;
+  }
+  
+  .productgried {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /* border: 1px solid red; */
+  }
+  .headline{
+      font-size: 1.71rem;
+      font-weight: 500;
+  }
+  .subheading{
+      font-size: .85rem;
+      line-height: 16px;
+      margin-top: 21px;
+      margin-bottom: 21px;
+  }
+  .pagination{
+      box-sizing: border-box;
+      margin-top: 40px;
+      margin-bottom: 10px;
+      /* background-color: antiquewhite; */
+      display: flex;
+  }
+  .paginationno{
+      box-sizing: border-box;
+      width: 70%;
+      text-align: center;
+      /* border: 1px solid gray; */
+  }
+  .paginationimages{
+      width: 20%;
+      /* border: 1px solid gray; */
+      gap: 15px;
+      /* padding-right: 15px; */
+      justify-content: right;
+      display: flex;
+  }
+  .paginationoption{
+      width: 10%;
+      /* border: 1px solid gray; */
+      text-align: right;
+      /* margin-right: 10px; */
+  }
+  .paginationoption select{
+      width: 100%;
+  }
+  .brandimage{
+      /* border: 1px solid red; */
+      box-sizing: border-box;
+      height: 120px;
+  }
+  .pagepath{
+    /* border: 1px solid green; */
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 20px;
+    /* padding-left: 10px; */
+  }
+  .filteroption select{
+      width: 100%;
+  }
+  .links{
+      padding-left: 20px;
+      font-weight: 400;
+      font-size: 12px;
+  }
+  .relatedcate{
+      font-weight: 600;
+      margin-top: 10px;
+  }
+  .searchfilter{
+    margin: 10px 0 0px 0;
+    display: flex;
+    justify-content: space-between;
+  }
+  .searchicon{
+    padding: 10px;
+  }

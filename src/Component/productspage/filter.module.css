@@ -1,0 +1,24 @@
+.filterbox{
+    width: 100%;
+    height: 300px;
+    /* background-color: bisque; */
+    overflow: auto;
+    text-transform: uppercase;
+}
+.filteritem{
+    width: 90%;
+    margin: 10px auto;
+    display: flex;
+    /* background-color: aquamarine; */
+    font-size: 15px;
+    align-items: center;
+}
+.filterbox input{
+    width: 20px;
+    height: 20px;
+}
+.filterbox p{
+    margin-left: 10px;
+    width: 150px;
+    /* background-color: antiquewhite; */
+}

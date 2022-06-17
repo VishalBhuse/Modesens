@@ -1,0 +1,22 @@
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+}
+.swiper {
+  width: 90%;
+  /* z-index: -1; */
+}
+.swiper-pagination-bullet{
+  display: none !important;
+}
+.swiper-button-prev::after{
+content: '←' !important;
+color: #000;
+} 
+.swiper-button-next::after{
+  content: '→' !important;
+  color: #000;
+}
+
+
