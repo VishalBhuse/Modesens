@@ -14,16 +14,29 @@ import {
   Text,
   VStack,
 } from "@chakra-ui/react";
+
+import {
+  Modal,
+  ModalOverlay,
+  ModalContent,
+  ModalHeader,
+  ModalFooter,
+  ModalBody,
+  ModalCloseButton,
+  useDisclosure,
+} from '@chakra-ui/react';
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { BsArrowRightCircleFill, BsFillArrowLeftCircleFill, BsSearch } from "react-icons/bs";
 import { Filters } from "./Filters";
 import styled from "./products.module.css";
-import { Link, useParams } from "react-router-dom";
+import { Link, useParams, Outlet } from "react-router-dom";
 import { Skeleton, SkeletonCircle, SkeletonText } from "@chakra-ui/react";
 
 const Products = () => {
   let { id } = useParams();
+
+  const { isOpen, onOpen, onClose } = useDisclosure()
   console.log(id);
   const category = [
     "Activewear",
@@ -560,17 +573,43 @@ const Products = () => {
               style={{ gridTemplateColumns: `repeat(${grid}, 1fr)` }}
             >
               {product.map((item) => (
-                <div className={styled.product1img} key={1}>
+                <div className={styled.product1img} key={item.web_scraper_order}>
                   
                     <span onClick={()=>{
                       axios.post("http://localhost:8080/like",item).then((res)=>console.log(res))
                     }}>♡</span>
                     <Link to={`/product/${cate}/${item.web_scraper_order}`}>
 
-                    <img src={item.product_img_src} alt="ab" />
+                    <img src={item.product_img_src} alt="ab" /> </Link>
+
+                    <Link to={`/products/${id}/quickview/${cate}/${item.web_scraper_order}`}>
                     <div className={styled.product1quckview}>
-                      <h2>QUICK VIEW</h2>
+                    <button onClick={onOpen}>QUICK VIEW </button>
                     </div>
+                    </Link>
+
+                    {/* comp start */}
+                      <div>
+                        
+                        <Modal size={"2xl"} isOpen={isOpen} onClose={onClose}>
+                          <ModalOverlay />
+                          <ModalContent>
+                            <ModalCloseButton />
+                            <ModalBody>
+                                
+                                <Outlet/>
+                            
+                            </ModalBody>
+                            
+                          </ModalContent>
+                        </Modal>
+
+
+                      </div>
+                      {/* Comp end */}   
+
+
+                    <Link to={`/product/${cate}/${item.web_scraper_order}`}>
                     <Center>
                       <VStack>
                         <Text fontWeight={"600"} fontSize={"15px"} mt={"1rem"}>
@@ -590,7 +629,7 @@ const Products = () => {
                         <Text fontSize={"12px"}>{item.brand_store}</Text>
                       </VStack>
                     </Center>
-                </Link>
+                    </Link>
                   </div>
               ))}
             </div>

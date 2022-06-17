@@ -172,10 +172,10 @@ export default function Navbar() {
                   <Link to={"#"}> My Likes </Link>
                 </MenuItem>
                 <MenuItem fontWeight={"600"}>
-                  <Link to={"#"}> My Alerts </Link>
+                  <Link to={"/alerts"}> My Alerts </Link>
                 </MenuItem>
                 <MenuItem fontWeight={"600"}>
-                  <Link to={"#"}> My Recently Viewd</Link>
+                  <Link to={"/recent"}> My Recently Viewd</Link>
                 </MenuItem>
                 <hr />
                 <MenuItem fontWeight={"600"}>
@@ -197,7 +197,7 @@ export default function Navbar() {
                   <Link to={"#"}> Invite Friends </Link>
                 </MenuItem>
                 <MenuItem fontWeight={"600"}>
-                  <Link to={"#"}> Setting </Link>
+                  <Link to={"/settings"}> Setting </Link>
                 </MenuItem>
                 <hr />
                 {user ? (
