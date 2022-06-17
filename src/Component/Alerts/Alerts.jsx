@@ -116,9 +116,7 @@ useEffect(() => {
           
           </ModalBody>
 
-          <ModalFooter style={{ marginTop:"-15px", justifyContent:"center", fontSize:"16px", fontWeight:"bold", color:"#959795"}}>
-           <Link to={`/recentproduct/${el.id}`}><p>See Full Details</p></Link> 
-          </ModalFooter>
+          
         </ModalContent>
       </Modal>
 
