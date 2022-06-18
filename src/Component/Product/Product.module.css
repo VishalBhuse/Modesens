@@ -1,0 +1,229 @@
+.maindiv{
+    display:flex;
+    justify-content: center;
+    gap:5%;
+}
+
+.productimgbox{
+    width:533px;
+    height:350px;
+    display: flex;
+}
+
+.listsharesymbol{
+    width:30px;
+    height:70px;
+    margin-left: 25%;
+    cursor: pointer;
+}
+
+.likesymbol{
+    color:red;
+    margin-top: -20px;
+}
+
+.unlikesymbol{
+    color:black;
+    margin-top: 4px;
+}
+
+.sharesymbol{
+    margin-top: 15px;
+}
+
+
+.pbrand{
+    font-weight: 500;
+}
+
+.pdescription{
+    font-size: 15px;
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+.pprize{
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+.psize{
+    font-size: 15px;
+    color:#959795;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.pbtn{
+    padding:5px 10px 5px 10px;
+    background-color: black;
+    color:white;
+    margin-top: 10px;
+}
+
+.ptag{
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+.learnmore{
+    color:#959795;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.productimg{
+    width:35%;
+    height:100%;
+    margin-left: 30%;
+}
+
+.productdescription{
+    text-align: left;
+}
+
+.siteinfo{
+    width:80%;
+    margin: auto;
+    text-align: left;
+    margin-top: 50px;
+}
+
+.sitehead{
+    font-weight: 500;
+}
+
+.sitedisc{
+    font-size: 16px;
+    color:#959795;
+    margin-top: 10px;
+}
+
+.elprice{
+    font-size: 16px;
+    color:#959795;
+    margin-top: 5px;
+}
+
+.stores{
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    gap:20px;
+    margin-top: 20px;
+}
+
+.sproductdata{
+    width:40%;
+    margin-left: 2%;
+}
+
+.store1{
+    display:flex;
+    border-bottom: 1px solid #959795;
+    width:100%;
+    height:150px;
+    align-items: center;
+}
+
+.storeimg{
+    width:20%;
+    height:90%;
+}
+
+.storeprice{
+    font-size: 16px;
+    color:firebrick;
+    font-weight: 400;
+}
+
+.storesize{
+    font-size: 14px;
+    color:#959795;
+}
+
+.storebtn{
+    margin-left: 14.5%;
+    font-size: 12px;
+    padding:5px 10px 5px 10px;
+    background-color: black;
+    color:white;
+}
+
+.viewmore{
+    text-align: center;
+    color:#959795;
+    font-weight: 500;
+    cursor: pointer;
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+.alerthead{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.subto{
+    font-weight: 500;
+}
+
+.alertbtn{
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    width:18%;
+    height:50px;
+    padding-left: 10px;
+    background-color: white;
+    border:0.1px solid black;
+}
+
+.alertbtn:hover{
+    background-color: black;
+    color:white;
+}
+
+.alerttext{
+    margin-left: 20%;
+}
+
+.bell{
+    font-size: 24px;
+}
+
+.alertinfo{
+    font-size: 15px;
+    color:#959795;
+    margin-top: 20px;
+}
+
+.offer{
+    width:85%;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.offerimg{
+    width:100%;
+}
+
+th, td{
+    border:1px solid black;
+    width:300px;
+    height:40px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+th:hover , td:hover{
+    background-color: #959795;
+}
+
+.sizenote{
+    font-size:14px;
+    margin-top: 20px;
+}

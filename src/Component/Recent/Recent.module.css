@@ -1,0 +1,259 @@
+.empty {
+  height: 220px;
+  background-color: #f8f7f6;
+}
+
+.profilebox {
+  background-color: white;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  width: 85%;
+  height: 210px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 25px;
+  padding-left: 0.5%;
+  padding-right: 1%;
+  margin-top: -110px;
+  border-radius: 10px;
+  font-size: 16px;
+}
+
+.imgmail {
+  /*330px*/
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.profileimg {
+  width: 20%;
+  height: 20%;
+}
+
+.pubshare {
+  display: flex;
+  width: 100%;
+  height: 75px;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.pubbtn {
+  height: 40px;
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: black;
+  color: white;
+  font-size: 14px;
+  margin-left: 75px;
+}
+
+.symbols {
+  margin-top: 40px;
+  height: 100px;
+  display: flex;
+  font-size: 30px;
+  justify-content: center;
+  gap: 25px;
+  width: 100%;
+  cursor: pointer;
+}
+
+.productbox {
+  width: 85%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin-top: 40px;
+}
+
+.product {
+  border:0.1px solid rgb(243, 243, 243);
+  width: 270px;
+  height: 430px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.quickbox {
+  margin: auto;
+  font-size: 18px;
+  height: 35px;
+  margin-top: -15px;
+}
+
+.quickbtn {
+  border: 1px solid black;
+  width: 80%;
+  padding: 5px 5px;
+  margin: auto;
+  color: black;
+  background-color: white;
+  opacity: 0.8;
+  display: none;
+  cursor: pointer;
+}
+
+.removesymbol {
+  display: none;
+}
+
+.product:hover .quickbtn {
+  display: block;
+}
+
+.product:hover .removesymbol {
+  display: block;
+}
+
+.delike {
+  display: flex;
+  justify-content: right;
+  gap: 20px;
+  height: 40px;
+  align-items: center;
+  box-sizing: border-box;
+  padding-right: 10px;
+}
+
+.likesymbol {
+  color: red;
+}
+
+.unlikesymbol {
+  color: black;
+}
+
+.productimg {
+  width: 60%;
+  height: 50%;
+  margin-left: 20%;
+  /*margin-top: -30px;*/
+}
+
+.brand {
+  margin-top: 5px;
+}
+
+.description {
+  font-size: 14px;
+  color: #959795;
+}
+
+.price {
+  margin-top: 0px;
+}
+
+.store {
+  font-size: 14px;
+  color: #959795;
+}
+
+.inputcommentsection {
+  width: 85%;
+  margin: auto;
+  margin-top: 30px;
+}
+
+.toughts {
+  text-align: left;
+  font-weight: 500;
+}
+
+.inputcommentbox {
+  width: 98%;
+  padding-bottom: 10px;
+  border-bottom: 2px solid silver;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.inputcomment {
+  border: none;
+  width: 92%;
+}
+
+.postbtn {
+  margin-left: 1%;
+  background-color: white;
+  border: 1px solid black;
+  padding: 5px 10px 5px 10px;
+}
+
+.commentsection {
+  width: 85%;
+  margin: auto;
+}
+
+.more {
+  text-align: left;
+  font-weight: 500;
+  margin-top: 20px;
+}
+
+.noposts {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.postsdiv {
+  width: 100%;
+  height: 50px;
+  text-align: left;
+  border: 1px solid black;
+  box-sizing: border-box;
+  padding-left: 1%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.commenttext {
+  width: 83%;
+  display: flex;
+  flex-wrap: wrap;
+  overflow: auto;
+}
+
+.removebtn {
+  height: 30px;
+  margin-right: 1%;
+  display: none;
+}
+
+.postsdiv:hover .removebtn {
+  display: block;
+}
+
+@media (min-width: 780px) and (max-width: 1000px) {
+  .productbox {
+    width: 85%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 40px;
+  }
+}
+
+@media (min-width: 450px) and (max-width: 750px) {
+  .productbox {
+    width: 85%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-top: 40px;
+  }
+}

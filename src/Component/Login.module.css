@@ -1,0 +1,62 @@
+.close
+{
+  font-size:x-large;
+  border: 1px  red;
+  display: flex;
+  justify-content: end;
+  cursor: pointer;
+}
+
+.logo
+{
+  width: 40%;
+    margin: auto;
+  
+}
+
+.inputBox
+{
+  margin-top: 4%;
+  text-align: center;
+
+}
+
+.logBtn
+{
+  background-color: black;
+  color: white;
+  
+}
+
+.line:before, .line:after {
+  content:'\00a0\00a0\00a0\00a0\00a0\00a0';
+  text-decoration: line-through;
+  margin: auto 0.5em;
+  border: 1px  red;
+  
+  
+}
+
+
+.wrapper
+{
+  border: 1px  red;
+  display: flex;
+  justify-content: center;
+  gap: 70px;
+  margin-top: 18px;
+  margin-bottom: 18px;
+
+}
+
+.wrapper div
+{
+  border: 1px  green;
+}
+
+.wrapper img
+{
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
