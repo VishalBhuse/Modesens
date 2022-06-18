@@ -69,10 +69,10 @@ const Product = () => {
             Size Guide
           </p>
 
-          <Modal isOpen={isOpen} size={"3xl"} onClose={onClose}>
+          <Modal isOpen={isOpen} size={"3xl"} onClose={onClose} >
             <ModalOverlay />
             <ModalContent>
-              <ModalHeader backgroundColor={"silver"}>SIZE GUIDE</ModalHeader>
+              <ModalHeader backgroundColor={"red"}>SIZE GUIDE</ModalHeader>
               <ModalCloseButton />
 
               <ModalBody marginTop={"40px"}>

@@ -56,10 +56,12 @@
 }
 
 .pbtn{
-    padding:5px 10px 5px 10px;
+    padding: 10px 15px;
     background-color: black;
-    color:white;
-    margin-top: 10px;
+    color: #fff;
+    font-weight: 600;
+    margin: 20px 0px !important;
+    width: 100%;
 }
 
 .ptag{
@@ -144,10 +146,12 @@
 
 .storebtn{
     margin-left: 14.5%;
-    font-size: 12px;
-    padding:5px 10px 5px 10px;
+    padding: 10px 15px;
     background-color: black;
-    color:white;
+    color: #fff;
+    font-size: 13px;
+    margin: 20px 0px !important;
+    font-weight: 600;
 }
 
 .viewmore{
@@ -188,6 +192,7 @@
 
 .alerttext{
     margin-left: 20%;
+    font-weight: 500;
 }
 
 .bell{

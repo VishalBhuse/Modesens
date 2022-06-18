@@ -37,7 +37,6 @@ const Products = () => {
   let { id } = useParams();
 
   const { isOpen, onOpen, onClose } = useDisclosure()
-  console.log(id);
   const category = [
     "Activewear",
     "Beachwear",
@@ -235,7 +234,6 @@ const Products = () => {
   const [grid, setgrid] = useState(4);
   const [page, setpage] = useState(1);
   const [totalpro, settotalpro] = useState("");
-  console.log(grid);
   useEffect(() => {
     axios
       .get(
@@ -246,7 +244,6 @@ const Products = () => {
         setproduct(res.data);
         setloading(false);
       })
-      .catch((err) => console.log(err));
 
     return () => {
       setloading(true);
@@ -591,8 +588,12 @@ const Products = () => {
                     {/* comp start */}
                       <div>
                         
-                        <Modal size={"2xl"} isOpen={isOpen} onClose={onClose}>
-                          <ModalOverlay />
+                        <Modal size={"2xl"} isOpen={isOpen} onClose={onClose}
+                        >
+                          <ModalOverlay 
+                          backgroundColor={"white"}
+                         
+                          />
                           <ModalContent>
                             <ModalCloseButton />
                             <ModalBody>
