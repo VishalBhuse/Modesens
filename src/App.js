@@ -46,11 +46,12 @@ function App() {
           </Route>
           <Route path="/alerts" element={<Alerts />}>
             <Route
-              path="/alerts/recentquickview/:id"
-              element={<RecentQuickview />}
+              path="/alerts/alertquickview/:id"
+              element={<AlertQuickview />}
             ></Route>
           </Route>
           <Route path="/recentproduct/:id" element={<RecentProduct />}></Route>
+          <Route path="/alertproduct/:id" element={<AlertProduct />}></Route>
         </Routes>
 
         <Footer />

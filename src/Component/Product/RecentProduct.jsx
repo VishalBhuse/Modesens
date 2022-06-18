@@ -18,20 +18,28 @@ import {
 import styles from "./Product.module.css";
 import { useEffect } from "react";
 import axios from "axios";
+import { postalertapi } from "../Store/PostAlert/alertaction";
+import { useDispatch } from "react-redux";
 
 const RecentProduct = () => {
   const {id} = useParams();
 
   const [product, setProduct] = useState({})
 
+  const dispatch = useDispatch();
+
   const { isOpen, onOpen, onClose } = useDisclosure();
   useEffect(()=>{
     axios
     .get(
-      `http://localhost:8080/like/${id}`
+      `http://localhost:8080/recent/${id}`
     )
     .then((res) => setProduct(res.data) )
   },[]) 
+
+  const handlealert = (category, productid) => {
+    postalertapi(dispatch,category, productid)
+  }
 
   return (
     <div>
@@ -258,7 +266,7 @@ const RecentProduct = () => {
         <div className={styles.alerthead}>
           <h3 className={styles.subto}>Subscribe To Alerts For This Product</h3>
 
-          <button className={styles.alertbtn}>
+          <button className={styles.alertbtn} onClick={() => handlealert(product.category, product.web_scraper_order)}>
             <p className={styles.bell}>
               <BiBell />
             </p>

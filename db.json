@@ -6600,5 +6600,50 @@
       "id": 6
     }
   ],
-  "post": []
+  "post": [],
+  "alert": [
+    {
+      "web_scraper_order": "1655216210-280",
+      "brand_store": "8 stores",
+      "product_name": "BOBBI BROWN",
+      "product_description": "Face Blender Brush In White",
+      "product_price": "$37 - $62",
+      "product_img_src": "https://cdn.modesens.com/product/6701604_74?w=400&",
+      "id": 1
+    },
+    {
+      "web_scraper_order": "1655216322-316",
+      "brand_store": "9 stores",
+      "product_name": "SISLEY PARIS",
+      "product_description": "Sisley-paris Velvet Nourishing Cream With Saffron Flowers In White",
+      "product_price": "$165 - $250",
+      "product_img_src": "https://n.nordstrommedia.com/id/sr3/d4522742-c93b-483e-b2af-ff01f1704573.jpeg?w=780&h=838",
+      "id": 2
+    },
+    {
+      "web_scraper_order": "1655219002-447",
+      "category_MenClothing": "VERSACE Heritage Scarf Cotton & Silk Hoodie In Black     $429 - $1025 1",
+      "brand_store": "8 stores",
+      "category_MenClothing_href": "https://modesens.com/product/versace-heritage-scarf-cotton-and-silk-hoodie-black-39850150/",
+      "product_name": "VERSACE",
+      "product_description": "Heritage Scarf Cotton & Silk Hoodie In Black",
+      "product_price": "$429 - $1025",
+      "product_img_src": "https://cdn.modesens.com/availability/48961296?w=400&",
+      "id": 3
+    }
+  ],
+  "recent": [
+    {
+      "category": "men_clothing",
+      "web_scraper_order": "1655219002-447",
+      "category_MenClothing": "VERSACE Heritage Scarf Cotton & Silk Hoodie In Black     $429 - $1025 1",
+      "brand_store": "8 stores",
+      "category_MenClothing_href": "https://modesens.com/product/versace-heritage-scarf-cotton-and-silk-hoodie-black-39850150/",
+      "product_name": "VERSACE",
+      "product_description": "Heritage Scarf Cotton & Silk Hoodie In Black",
+      "product_price": "$429 - $1025",
+      "product_img_src": "https://cdn.modesens.com/availability/48961296?w=400&",
+      "id": 1
+    }
+  ]
 }

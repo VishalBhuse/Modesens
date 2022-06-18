@@ -33,8 +33,17 @@ import styled from "./products.module.css";
 import { Link, useParams, Outlet } from "react-router-dom";
 import { Skeleton, SkeletonCircle, SkeletonText } from "@chakra-ui/react";
 
+import { useDispatch } from "react-redux";
+import { postrecentapi } from "../Store/PostRecent/recentaction";
+
 const Products = () => {
   let { id } = useParams();
+
+  const dispatch = useDispatch();
+
+  const handlerecent = (category, productid) => {
+    postrecentapi(dispatch,category,productid)
+  }
 
   const { isOpen, onOpen, onClose } = useDisclosure()
   const category = [
@@ -577,7 +586,7 @@ const Products = () => {
                     }}>♡</span>
                     <Link to={`/product/${cate}/${item.web_scraper_order}`}>
 
-                    <img src={item.product_img_src} alt="ab" /> </Link>
+                    <img onClick={() => handlerecent(cate, item.web_scraper_order)} src={item.product_img_src} alt="ab" /> </Link>
 
                     <Link to={`/products/${id}/quickview/${cate}/${item.web_scraper_order}`}>
                     <div className={styled.product1quckview}>
@@ -611,7 +620,7 @@ const Products = () => {
 
 
                     <Link to={`/product/${cate}/${item.web_scraper_order}`}>
-                    <Center>
+                    <Center onClick={() => handlerecent(cate, item.web_scraper_order)}>
                       <VStack>
                         <Text fontWeight={"600"} fontSize={"15px"} mt={"1rem"}>
                           {item.product_name}
