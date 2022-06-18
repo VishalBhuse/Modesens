@@ -6,12 +6,6 @@ import Footer from "./Component/Footer";
 import Login from "./Component/Login";
 
 import Dashboard from "./Component/Dashboard";
-<<<<<<< HEAD
-import Products from "./Component/productspage/Products";
-import Homeindex from "./Component/Homeindex";
-import Likes from "./Component/Likes"
-
-=======
 
 import Likes from "./Component/Likes";
 
@@ -28,7 +22,8 @@ import Recent from "./Component/Recent/Recent";
 import Alerts from "./Component/Alerts/Alerts";
 import RecentQuickview from "./Component/QuickView/RecentQuickview";
 import RecentProduct from "./Component/Product/RecentProduct";
->>>>>>> f8ad9a67d44010048a861f496245d00d329195d4
+import AlertQuickview from "./Component/QuickView/AlertQuickview";
+import AlertProduct from "./Component/Product/AlertProduct";
 
 function App() {
   return (
@@ -49,9 +44,10 @@ function App() {
           <Route path="/recent/recentquickview/:id" element={<RecentQuickview/>} ></Route>
         </Route>
         <Route path="/alerts" element={<Alerts/>}>
-        <Route path="/alerts/recentquickview/:id" element={<RecentQuickview/>} ></Route>
+        <Route path="/alerts/alertquickview/:id" element={<AlertQuickview/>} ></Route>
         </Route>
         <Route path="/recentproduct/:id" element={<RecentProduct/>}></Route>
+        <Route path="/alertproduct/:id" element={<AlertProduct/>}></Route>
       </Routes>
 
       <Footer />

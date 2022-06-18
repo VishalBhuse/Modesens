@@ -5,7 +5,7 @@ import { GrEdit, GrPan } from 'react-icons/gr';
 import { RiCamera3Line, RiDeleteBin5Line, RiShareForwardBoxLine } from 'react-icons/ri';
 import styles from "../Recent/Recent.module.css"
 import { useDispatch, useSelector } from 'react-redux';
-import { getpostapi, postcommentapi, removepostapi } from '../Store/Post.action';
+import { getpostapi, postcommentapi, removepostapi } from '../Store/Post/Post.action';
 import { useEffect } from 'react';
 import { Link, Outlet } from 'react-router-dom';
 
@@ -22,6 +22,7 @@ import {
 } from '@chakra-ui/react';
 
 import axios from 'axios';
+import { removealertapi } from '../Store/PostAlert/alertaction';
 
 const Alerts = () => {
 
@@ -31,7 +32,9 @@ const Alerts = () => {
 
   const dispatch = useDispatch();
 
-  let {postcomment, getcomment} = useSelector((state) => state)
+  const {data} = useSelector((state) => state.alert)
+
+  let {postcomment, getcomment} = useSelector((state) => state.comment)
 
   const { isOpen, onOpen, onClose } = useDisclosure()
 
@@ -46,15 +49,19 @@ const Alerts = () => {
       removepostapi(dispatch,id)
   }
 
+  const handledelete = (id) => {
+    removealertapi(dispatch,id)
+  }
+
   useEffect(() => {
     getpostapi(dispatch);
   },[])
 
 useEffect(() => {
   axios
-  .get("http://localhost:8080/like")
+  .get("http://localhost:8080/alert")
   .then((res) => setRecentdata(res.data))
-},[])
+},[data])
 
  
 
@@ -95,12 +102,12 @@ useEffect(() => {
             {recentdata.map((el,index) => (
               <div className={styles.product} key={index}>
                 <div className={styles.delike}>
-                <h3 className={styles.removesymbol}><RiDeleteBin5Line /></h3>
+                <h3 onClick={() => handledelete(el.id)} className={styles.removesymbol}><RiDeleteBin5Line /></h3>
                 <h3 className={styles.unlikesymbol}> {/*<AiFillHeart />*/ <AiOutlineHeart/>}  </h3>
                 </div>
-                <Link style={{textDecoration:"none"}} to={`/recentproduct/${el.id}`} >  <img className={styles.productimg} src={el.product_img_src}/> </Link>
+                <Link style={{textDecoration:"none"}} to={`/alertproduct/${el.id}`} >  <img className={styles.productimg} src={el.product_img_src}/> </Link>
                 <div className={styles.quickbox} >
-                <Link to={`/alerts/recentquickview/${el.id}`}> <button onClick={onOpen} className={styles.quickbtn}>Quick View</button> </Link>
+                <Link to={`/alerts/alertquickview/${el.id}`}> <button onClick={onOpen} className={styles.quickbtn}>Quick View</button> </Link>
                  </div>
 
 {/* comp start */}
@@ -116,14 +123,13 @@ useEffect(() => {
           
           </ModalBody>
 
-          
         </ModalContent>
       </Modal>
 
 
 </div>
 {/* Comp end */}   
-                <Link style={{textDecoration:"none"}} to={`/recentproduct/${el.id}`} > 
+                <Link style={{textDecoration:"none"}} to={`/alertproduct/${el.id}`} > 
                 <div>
                 <h5 className={styles.brand}>{el.product_name}</h5>
                 <p className={styles.description} >{el.product_description}</p>

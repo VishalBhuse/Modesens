@@ -8,7 +8,7 @@ import { useEffect } from "react";
 
 import axios from "axios";
 
-const RecentQuickview = () => {
+const AlertQuickview = () => {
     let {id} = useParams();
 
     const [product, setProduct] = useState({})
@@ -16,7 +16,7 @@ const RecentQuickview = () => {
     useEffect(()=>{
       axios
       .get(
-        `http://localhost:8080/recent/${id}`
+        `http://localhost:8080/alert/${id}`
       )
       .then((res) => setProduct(res.data)  )
     },[]) 
@@ -130,7 +130,7 @@ const RecentQuickview = () => {
 
         <h5 className={styles.viewmore}>VIEW MORE</h5>
 
-        <Link to={`/recentproduct/${product.id}`}><p className={styles.viewmore}>See Full Details</p></Link> 
+        <Link to={`/alertproduct/${product.id}`}><p className={styles.viewmore}>See Full Details</p></Link> 
 
 
         
@@ -139,4 +139,4 @@ const RecentQuickview = () => {
   )
 }
 
-export default RecentQuickview
+export default AlertQuickview

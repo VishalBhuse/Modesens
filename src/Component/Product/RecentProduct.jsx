@@ -28,7 +28,7 @@ const RecentProduct = () => {
   useEffect(()=>{
     axios
     .get(
-      `http://localhost:8080/like/${id}`
+      `http://localhost:8080/recent/${id}`
     )
     .then((res) => setProduct(res.data) )
   },[]) 
