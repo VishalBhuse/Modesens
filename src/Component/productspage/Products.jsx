@@ -6,7 +6,6 @@ import {
   AccordionPanel,
   Box,
   Button,
-  ButtonGroup,
   Center,
   Grid,
   GridItem,
@@ -15,16 +14,19 @@ import {
   VStack,
 } from "@chakra-ui/react";
 import axios from "axios";
-import React, { useEffect, useState } from "react";
-import { BsArrowRightCircleFill, BsFillArrowLeftCircleFill, BsSearch } from "react-icons/bs";
+import React, { useEffect,  useState } from "react";
+import {
+  BsArrowRightCircleFill,
+  BsFillArrowLeftCircleFill,
+  BsSearch,
+} from "react-icons/bs";
 import { Filters } from "./Filters";
 import styled from "./products.module.css";
 import { Link, useParams } from "react-router-dom";
-import { Skeleton, SkeletonCircle, SkeletonText } from "@chakra-ui/react";
+import { Skeleton } from "@chakra-ui/react";
 
 const Products = () => {
   let { id } = useParams();
-  console.log(id);
   const category = [
     "Activewear",
     "Beachwear",
@@ -222,7 +224,8 @@ const Products = () => {
   const [grid, setgrid] = useState(4);
   const [page, setpage] = useState(1);
   const [totalpro, settotalpro] = useState("");
-  console.log(grid);
+  const [likepro, setlikepro] = useState([]);
+  
   useEffect(() => {
     axios
       .get(
@@ -239,6 +242,12 @@ const Products = () => {
       setloading(true);
     };
   }, [id, page]);
+
+  useEffect(() => {
+    axios.get("http://localhost:8080/like").then((res) => {
+      setlikepro(res.data);
+    });
+  }, []);
 
   return (
     <div className={styled.productmean}>
@@ -453,15 +462,13 @@ const Products = () => {
             >
               <BsFillArrowLeftCircleFill />
             </button>
-            <span >
-              {page}
-            </span>
+            <span>{page}</span>
             <button
               onClick={() => {
                 if (totalpro > 20 * page) return setpage(page + 1);
               }}
             >
-            <BsArrowRightCircleFill />
+              <BsArrowRightCircleFill />
             </button>
           </div>
           <div className={styled.paginationimages}>
@@ -560,13 +567,9 @@ const Products = () => {
               style={{ gridTemplateColumns: `repeat(${grid}, 1fr)` }}
             >
               {product.map((item) => (
-                <div className={styled.product1img} key={1}>
-                  
-                    <span onClick={()=>{
-                      axios.post("http://localhost:8080/like",item).then((res)=>console.log(res))
-                    }}>♡</span>
-                    <Link to={`/product/${cate}/${item.web_scraper_order}`}>
-
+                <div className={styled.product1img} key={item.web_scraper_order}>
+                  <span>♡</span>
+                  <Link to={`/product/${cate}/${item.web_scraper_order}`}>
                     <img src={item.product_img_src} alt="ab" />
                     <div className={styled.product1quckview}>
                       <h2>QUICK VIEW</h2>
@@ -590,8 +593,8 @@ const Products = () => {
                         <Text fontSize={"12px"}>{item.brand_store}</Text>
                       </VStack>
                     </Center>
-                </Link>
-                  </div>
+                  </Link>
+                </div>
               ))}
             </div>
           </>

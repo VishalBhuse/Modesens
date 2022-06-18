@@ -7,7 +7,7 @@ export const Filters = (props) => {
     <div className={styled.filterbox}>
       {props.filteritem.map((item) => (
         // return (
-          <div className={styled.filteritem}>
+          <div key={item} className={styled.filteritem}>
             <input type="checkbox" />
             <p>{item}</p>
           </div>

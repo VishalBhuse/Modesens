@@ -6573,6 +6573,18 @@
       "product_img_src": "https://cdn.modesens.com/product/21372265_31?w=400&",
       "product_price": "$1019 - $2095",
       "id": 3
+    },
+    {
+      "web_scraper_order": "1655211288-46",
+      "web-scraper-start_url": "https://modesens.com/shop-women-clothing/",
+      "category_women": "GANNI Tie-side Crochet Organic-cotton Bikini Briefs In Printed     $58 - $195 1",
+      "brand_store": "8 stores",
+      "category_women_href": "https://modesens.com/product/ganni-tie-side-crochet-organic-cotton-bikini-briefs-printed-42855054/",
+      "product_name": "GANNI",
+      "product_description": "Tie-side Crochet Organic-cotton Bikini Briefs In Printed",
+      "product_img_src": "https://www.ganni.com/dw/image/v2/AAWT_PRD/on/demandware.static/-/Sites-ganni-master-catalogue/default/dwd37b207f/images/images/model/A4263-999-1.jpg?sh=740",
+      "product_price": "$58 - $195",
+      "id": 4
     }
   ]
 }
