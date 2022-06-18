@@ -24,6 +24,8 @@ import Recent from "./Component/Recent/Recent";
 import Alerts from "./Component/Alerts/Alerts";
 import RecentQuickview from "./Component/QuickView/RecentQuickview";
 import RecentProduct from "./Component/Product/RecentProduct";
+import AlertQuickview from "./Component/QuickView/AlertQuickview";
+import AlertProduct from "./Component/Product/AlertProduct";
 
 function App() {
   return (
@@ -51,11 +53,12 @@ function App() {
           </Route>
           <Route path="/alerts" element={<Alerts />}>
             <Route
-              path="/alerts/recentquickview/:id"
-              element={<RecentQuickview />}
+              path="/alerts/alertquickview/:id"
+              element={<AlertQuickview />}
             ></Route>
           </Route>
           <Route path="/recentproduct/:id" element={<RecentProduct />}></Route>
+          <Route path="/alertproduct/:id" element={<AlertProduct />}></Route>
         </Routes>
 
         <Footer />
