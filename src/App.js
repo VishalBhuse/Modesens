@@ -6,18 +6,6 @@ import Footer from "./Component/Footer";
 import Login from "./Component/Login";
 
 import Dashboard from "./Component/Dashboard";
-<<<<<<< HEAD
-import Products from "./Component/productspage/Products";
-import Homeindex from "./Component/Homeindex";
-import Likes from "./Component/Likes"
-
-=======
-
-import Likes from "./Component/Likes";
-
-import Products from "./Component/productspage/Products";
-import Homeindex from "./Component/Homeindex";
-import { AuthContextProvider } from "./Component/Context/AuthContext";
 // import { Filters } from "./Component/productspage/Filters";
 
 
@@ -28,7 +16,6 @@ import Recent from "./Component/Recent/Recent";
 import Alerts from "./Component/Alerts/Alerts";
 import RecentQuickview from "./Component/QuickView/RecentQuickview";
 import RecentProduct from "./Component/Product/RecentProduct";
->>>>>>> f8ad9a67d44010048a861f496245d00d329195d4
 
 function App() {
   return (
