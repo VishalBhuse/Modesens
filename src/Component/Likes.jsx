@@ -114,13 +114,13 @@ function Likes() {
                               <h1 style={{marginLeft:"78px",marginTop:"25px",fontWeight:"600",fontSize:"20px"}}>Share Your Thoughts</h1>  
                             <div className='comment_div'>
                             <input onChange={handle} type="text" placeholder='Add a comment...' />
-                              <img style={{height:"35px"}} src="https://cdn-icons.flaticon.com/png/128/5124/premium/5124630.png?token=exp=1655366357~hmac=93f4b81b2bad2141c3af56ed3028f6bd" alt="COMMENT" />
+                              <img style={{height:"35px"}} src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHIAAAB7CAMAAACfDCSHAAAAk1BMVEX///8REiQ4ODg1NTUAAAD29vby8vIwMDDr6+tMTExWVlZ5eXnh4eEhISEMDSEcHBxFRUUAABusrKy0tLQnJydhYWFpaWmZmZnJyckUFBSCgoKmpqbDw8M9PT2Ojo66urrS0tIwMDtnZ29wcXg/P0h+foVxcXEkJDBUVV4dHio5OUBfYGpGRk5NTVOLi5E3OEQAABW0z4pfAAACtUlEQVRoge2Yi3KiMBRAgSgBNAiKooiPEChQfP3/120udGfbWm1jaGe2c48z4TEJh4QkN8YwEARBEARBEARBEOSXYTta2MpCJwmIFkHiqBn3NCKWFiSiexXjMKB6QoAGQwXljsF7Ug2gjdhOQZnISpLFSIOFdNJEQTkC5VihwBVjUI5QeUO5jNVHtGHHSw1lOgjWilJ7vRmkOkpGWDBVGF7DaSCL6CgdjxHCNtOvlptuIP/c0eo+6SayCLNmXyk1sxixok0K51o9dspASj6VzigI2UuL6A2S4XZC5Sxt3Z2+dpaMA3Sy/fvddcel87QiUurelO5cKSSrp3/xSn8qWMp+dFPaCZm3fHWvj9lnFkQWPDd9nzeFt7Gi4O3H7mXCs2MKdyfz15UxlvMJCMn7aaqnOXY8iuR9+koqhXAnGl3n7Wta33uwPqGTxb69aoUk8vbXOXuMJDMawRpjNR+P5ytYrUT0wxHba/CKoWqypvAN5SH+OFe/8dJOVi+LMbpKbsWZvkP0eAFVJJPFnSy9rwpSlzH3aoh+q9IYrtd3w+j/tPZBJSpRiUpU/gpluz3hehq4sNTcKii7TRgtYBPmXgy/wutjq8lTMRqO/DOsCXMVN/Hs2HO18B7a2dBC3YcgCIIgCIIgCIIgSgx/HGPw4xjmW/yrk95plT7QpmEZ+iFchOV3KsOqbvI6z/iB81MhhJc/e9tDUz/6yPad/S4Nu+qEsiIXmYZ+p/QPlcjEMcsOosniotie4ud99nDD+ufmzHPOq+OZ86bm5zOXz35uRFNlVRV2DesXVXOsjlku8qo4FfE2rtbJ5WFlWRSZEEVTnER2qjJRyJoIkRTHqhHi8qIsL3l5LuvcNPlhUHLTzGv+qFHStmYIDSxP4dIszYts57rrlF33gR8kbdoevq/Dmu8HyQ/wB9aHTJm8t1TZAAAAAElFTkSuQmCC" alt="COMMENT" />
                               <button onClick={show_post}>POST</button>
                             </div>
                             <h1 style={{marginLeft:"78px",fontWeight:"600",fontSize:"20px",marginTop:"25px"}}>More From User_Name</h1>
 
         <div className="post">
-          {/* <ol>                            
+          <ol>                            
                                  {
                                   data.length==0? "Oops! Nothing Posts Yet" :
                                   data.map(({title})=>(
@@ -128,7 +128,7 @@ function Likes() {
 
                                   ))
                               }  
-                              </ol>     */}
+                              </ol>    
         </div>
       </div>
     </>

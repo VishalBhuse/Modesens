@@ -7,6 +7,7 @@
     <div className='first'>You have style worth sharing. Invite friends to join ModeSens, Your Digital Shopping Assistant, today!</div>
     <div className='second'>Once they sign up, you’ll both receive silver premium membership for three months.</div>
        <div className='third'>
+        
        
         ModeSens compares prices across 500+ stores, saving you time and money! Plus, you'll have access to ModeSens Concierge and Shopper Protection for extra peace of mind.
         
