@@ -5,7 +5,7 @@ import { GrEdit, GrPan } from 'react-icons/gr';
 import { RiCamera3Line, RiDeleteBin5Line, RiShareForwardBoxLine } from 'react-icons/ri';
 import styles from "./Recent.module.css"
 import { useDispatch, useSelector } from 'react-redux';
-import { getpostapi, postcommentapi, removepostapi } from '../Store/Post.action';
+import { getpostapi, postcommentapi, removepostapi } from '../Store/Post/Post.action';
 import { useEffect } from 'react';
 import { Link, Outlet } from 'react-router-dom';
 
@@ -22,6 +22,7 @@ import {
 } from '@chakra-ui/react';
 
 import axios from 'axios';
+import { removerecentapi } from '../Store/PostRecent/recentaction';
 
 const Recent = () => {
 
@@ -31,9 +32,11 @@ const Recent = () => {
 
   const dispatch = useDispatch();
 
-  let {postcomment, getcomment} = useSelector((state) => state)
+  let {postcomment, getcomment} = useSelector((state) => state.comment)
 
   const { isOpen, onOpen, onClose } = useDisclosure()
+
+  const {data} = useSelector((state) => state.recent)
 
  const handlepost = () => {
     let value = postref.current.value;
@@ -52,9 +55,13 @@ const Recent = () => {
 
 useEffect(() => {
   axios
-  .get("http://localhost:8080/like")
+  .get("http://localhost:8080/recent")
   .then((res) => setRecentdata(res.data))
-},[])
+},[data])
+
+const handledelete = (id) => {
+  removerecentapi(dispatch,id)
+}
 
  
 
@@ -95,7 +102,7 @@ useEffect(() => {
             {recentdata.map((el,index) => (
               <div className={styles.product} key={index}>
                 <div className={styles.delike}>
-                <h3 className={styles.removesymbol}><RiDeleteBin5Line /></h3>
+                <h3 onClick={() => handledelete(el.id)} className={styles.removesymbol}><RiDeleteBin5Line /></h3>
                 <h3 className={styles.unlikesymbol}> {/*<AiFillHeart />*/ <AiOutlineHeart/>}  </h3>
                 </div>
                 <Link style={{textDecoration:"none"}} to={`/recentproduct/${el.id}`} >  <img className={styles.productimg} src={el.product_img_src}/> </Link>

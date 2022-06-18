@@ -18,37 +18,20 @@ import {
 import styles from "./Product.module.css";
 import { useEffect } from "react";
 import axios from "axios";
-import { postalertapi } from "../Store/PostAlert/alertaction";
-import { useDispatch } from "react-redux";
 
+const AlertProduct = () => {
+  const {id} = useParams();
 
-const Product = () => {
-  const { category, productid } = useParams();
-
-  const [product, setProduct] = useState({});
-
-  const dispatch = useDispatch();
+  const [product, setProduct] = useState({})
 
   const { isOpen, onOpen, onClose } = useDisclosure();
-
   useEffect(()=>{
     axios
     .get(
-      `http://localhost:8080/${category}`
+      `http://localhost:8080/alert/${id}`
     )
-    .then((res) => {
-      res.data.map((el) => {
-        if(el.web_scraper_order === productid){
-          setProduct(el)
-        }
-      })
-    })
+    .then((res) => setProduct(res.data) )
   },[]) 
-
-
-  const handlealert = () => {
-    postalertapi(dispatch,category, productid)
-  }
 
   return (
     <div>
@@ -275,11 +258,11 @@ const Product = () => {
         <div className={styles.alerthead}>
           <h3 className={styles.subto}>Subscribe To Alerts For This Product</h3>
 
-          <button className={styles.alertbtn} onClick={() => handlealert()}>
+          <button className={styles.alertbtn}>
             <p className={styles.bell}>
               <BiBell />
             </p>
-            <p className={styles.alerttext} >SET ALERT</p>
+            <p className={styles.alerttext}>SET ALERT</p>
           </button>
         </div>
 
@@ -304,4 +287,4 @@ const Product = () => {
   )
 };
 
-export default Product;
+export default AlertProduct;
