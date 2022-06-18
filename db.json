@@ -6562,6 +6562,42 @@
       "product_img_src": "https://cdn.modesens.com/product/21372265_31?w=400&",
       "product_price": "$1019 - $2095",
       "id": 3
+    },
+    {
+      "web_scraper_order": "1655211209-18",
+      "web-scraper-start_url": "https://modesens.com/shop-women-clothing/",
+      "category_women": "GANNI Twisted Strap Swimsuit Smiley - Placement Print In Black     $91 - $240 1",
+      "brand_store": "3 stores",
+      "category_women_href": "https://modesens.com/product/ganni-twisted-strap-swimsuit-smiley---placement-print-black-38045128/",
+      "product_name": "GANNI",
+      "product_description": "Twisted Strap Swimsuit Smiley - Placement Print In Black",
+      "product_img_src": "https://cdn-images.farfetch-contents.com/17/65/23/46/17652346_36883795_1000.jpg",
+      "product_price": "$91 - $240",
+      "id": 4
+    },
+    {
+      "web_scraper_order": "1655218973-441",
+      "web-scraper-start_url": "https://modesens.com/shop-men-clothing/",
+      "category_MenClothing": "JACQUEMUS Le Sweatshirt Vague Organic Cotton Logo Hoodie In Green     $226 - $519 2",
+      "brand_store": "0 stores",
+      "category_MenClothing_href": "https://modesens.com/product/jacquemus-le-sweatshirt-vague-organic-cotton-logo-hoodie-green-40099640/",
+      "product_name": "JACQUEMUS",
+      "product_description": "Le Sweatshirt Vague Organic Cotton Logo Hoodie In Green",
+      "product_price": "$226 - $519",
+      "product_img_src": "https://cdn.modesens.com/availability/45631632?w=400&",
+      "id": 5
+    },
+    {
+      "web_scraper_order": "1655219005-448",
+      "web-scraper-start_url": "https://modesens.com/shop-men-clothing/",
+      "category_MenClothing": "PALM ANGELS Logo-jacquard Cotton-mesh Sweater In Black     $221 - $550 1",
+      "brand_store": "8 stores",
+      "category_MenClothing_href": "https://modesens.com/product/palm-angels-logo-jacquard-cotton-mesh-sweater-black-22309428/",
+      "product_name": "PALM ANGELS",
+      "product_description": "Logo-jacquard Cotton-mesh Sweater In Black",
+      "product_price": "$221 - $550",
+      "product_img_src": "https://cdn.modesens.com/availability/28363196?w=400&",
+      "id": 6
     }
   ],
   "post": [],
@@ -6583,17 +6619,6 @@
       "product_price": "$165 - $250",
       "product_img_src": "https://n.nordstrommedia.com/id/sr3/d4522742-c93b-483e-b2af-ff01f1704573.jpeg?w=780&h=838",
       "id": 2
-    },
-    {
-      "web_scraper_order": "1655219002-447",
-      "category_MenClothing": "VERSACE Heritage Scarf Cotton & Silk Hoodie In Black     $429 - $1025 1",
-      "brand_store": "8 stores",
-      "category_MenClothing_href": "https://modesens.com/product/versace-heritage-scarf-cotton-and-silk-hoodie-black-39850150/",
-      "product_name": "VERSACE",
-      "product_description": "Heritage Scarf Cotton & Silk Hoodie In Black",
-      "product_price": "$429 - $1025",
-      "product_img_src": "https://cdn.modesens.com/availability/48961296?w=400&",
-      "id": 3
     }
   ],
   "recent": [

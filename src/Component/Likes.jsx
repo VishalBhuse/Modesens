@@ -1,6 +1,11 @@
 import { v4 as uuid } from "uuid";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import "./Likes.css";
+import axios from "axios";
+
+import styles from "./Recent/Recent.module.css";
+
+import { AiFillHeart} from 'react-icons/ai';
 
 function Likes() {
   const [value, setValue] = useState(null);
@@ -17,7 +22,14 @@ function Likes() {
     };
     setData([...data, fi]);
   };
-  console.log(data);
+
+  const [likeddata, setLikeddata] =useState([]);
+
+  useEffect(() => {
+    axios
+    .get("http://localhost:8080/like")
+    .then((res) => setLikeddata(res.data))
+  },[data])
 
   return (
     <>
@@ -108,9 +120,34 @@ function Likes() {
           </div>
         </div>
 
-                            <div className='show_products'>
-                              products
-                              </div>   
+        <div className={styles.productbox}>
+            {likeddata.map((el,index) => (
+              <div className={styles.product} key={index}>
+                <div className={styles.delike}>
+                <h3 className={styles.likesymbol}> {<AiFillHeart />}  </h3>
+                </div>
+                 <img className={styles.productimg} src={el.product_img_src}/> 
+                <div className={styles.quickbox} >
+                <button className={styles.quickbtn}>Quick View</button> 
+                 </div>
+
+
+                 
+                <div>
+                <h5 className={styles.brand}>{el.product_name}</h5>
+                <p className={styles.description} >{el.product_description}</p>
+                <h5 className={styles.price}>{el.product_price}</h5>
+                <h5 className={styles.store}>{el.brand_store} Stores</h5>
+                </div>
+              </div>
+              
+            ))}
+            
+        </div>
+
+
+
+
                               <h1 style={{marginLeft:"78px",marginTop:"25px",fontWeight:"600",fontSize:"20px"}}>Share Your Thoughts</h1>  
                             <div className='comment_div'>
                             <input onChange={handle} type="text" placeholder='Add a comment...' />
