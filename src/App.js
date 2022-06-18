@@ -5,13 +5,7 @@ import Navbar from "./Component/Navbar";
 import Footer from "./Component/Footer";
 import Login from "./Component/Login";
 
-import Dashboard from "./Component/Dashboard";
-<<<<<<< HEAD
-import Products from "./Component/productspage/Products";
-import Homeindex from "./Component/Homeindex";
-import Likes from "./Component/Likes"
-
-=======
+import Dashboard from "./Component/Dashboard"
 
 import Likes from "./Component/Likes";
 
@@ -20,7 +14,7 @@ import Homeindex from "./Component/Homeindex";
 import { AuthContextProvider } from "./Component/Context/AuthContext";
 // import { Filters } from "./Component/productspage/Filters";
 
-
+import Invite from "./Component/Invite";
 import Product from "./Component/Product/Product";
 import Quickview from "./Component/QuickView/Quickview";
 import Settings from "./Component/Settings/Settings";
@@ -28,7 +22,6 @@ import Recent from "./Component/Recent/Recent";
 import Alerts from "./Component/Alerts/Alerts";
 import RecentQuickview from "./Component/QuickView/RecentQuickview";
 import RecentProduct from "./Component/Product/RecentProduct";
->>>>>>> f8ad9a67d44010048a861f496245d00d329195d4
 
 function App() {
   return (
@@ -38,6 +31,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Homeindex />} />
         <Route path="/login" element={<Login />} />
+        <Route path="/invite" element={<Invite/>}/>
         <Route path="/likes" element={<Likes />} />
         <Route path="/dashboard" element={<Dashboard />} />
         <Route path="/products/:id" element={<Products />}>
