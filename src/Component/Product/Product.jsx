@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 
 import { AiFillHeart, AiOutlineHeart } from "react-icons/ai";
 import { RiShareForwardBoxLine } from "react-icons/ri";
@@ -217,13 +217,16 @@ const Product = () => {
       </div>
 
       <div className={styles.siteinfo}>
-        <h3 className={styles.sitehead}>Shop From Partner Stores</h3>
+        <h3 className={styles.sitehead}>
+
+          Shop From Partner Stores
+          </h3>
         <p className={styles.elprice}>
           {product.product_price}
         </p>
 
         {/*Stores Start */}
-        <div className={styles.stores}>
+       <div className={styles.stores} >
           <div className={styles.store1}>
             <img className={styles.storeimg} src={`${product.product_img_src}`} />
             <div className={styles.sproductdata}>
@@ -232,10 +235,10 @@ const Product = () => {
               <p className={styles.storesize}>SIZES: XS, S, M, L</p>
             </div>
 
-            <button className={styles.storebtn}>BUY FROM STORE</button>
+            <a href="https://modesens.com/"> <button className={styles.storebtn}>BUY FROM STORE</button> </a>
           </div>
 
-          <div className={styles.store1}>
+          <div className={styles.store1} >
             <img className={styles.storeimg} src={`${product.product_img_src}`} />
             <div className={styles.sproductdata}>
               <h5 className={styles.storename}>FARFETCH</h5>
@@ -243,10 +246,10 @@ const Product = () => {
               <p className={styles.storesize}>SIZES: XS, S, M, L</p>
             </div>
 
-            <button className={styles.storebtn}>BUY FROM STORE</button>
+            <a href="https://modesens.com/"> <button className={styles.storebtn}>BUY FROM STORE</button> </a>
           </div>
 
-          <div className={styles.store1}>
+          <div className={styles.store1} >
             <img className={styles.storeimg} src={`${product.product_img_src}`} />
             <div className={styles.sproductdata}>
               <h5 className={styles.storename}>Mytheresa</h5>
@@ -254,7 +257,7 @@ const Product = () => {
               <p className={styles.storesize}>SIZES: XS, S, M, L</p>
             </div>
 
-            <button className={styles.storebtn}>BUY FROM STORE</button>
+            <a href="https://modesens.com/"> <button className={styles.storebtn}>BUY FROM STORE</button> </a>
           </div>
 
           <div className={styles.store1}>
@@ -265,7 +268,7 @@ const Product = () => {
               <p className={styles.storesize}>SIZES: XS, S, M, L</p>
             </div>
 
-            <button className={styles.storebtn}>BUY FROM STORE</button>
+            <a href="https://modesens.com/"><button className={styles.storebtn} >BUY FROM STORE</button></a>
           </div>
         </div>
         {/*Stores end */}

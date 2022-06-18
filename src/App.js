@@ -2,26 +2,24 @@ import "./App.css";
 import { Routes, Route } from "react-router-dom";
 
 import Navbar from "./Component/Navbar";
+import Homeindex from "./Component/Homeindex";
 import Footer from "./Component/Footer";
 
-
+import RecentProduct from "./Component/Product/RecentProduct";
 import Products from "./Component/productspage/Products";
-import Homeindex from "./Component/Homeindex";
-import Likes from "./Component/Likes";
-import Invite from "./Component/Invite";
+import Product from "./Component/Product/Product";
+
 
 import { AuthContextProvider } from "./Component/Context/AuthContext";
 
-// import { Filters } from "./Component/productspage/Filters";
+import Likes from "./Component/Likes";
+import Invite from "./Component/Invite";
 
-
-import Product from "./Component/Product/Product";
 import Quickview from "./Component/QuickView/Quickview";
 import Settings from "./Component/Settings/Settings";
 import Recent from "./Component/Recent/Recent";
 import Alerts from "./Component/Alerts/Alerts";
 import RecentQuickview from "./Component/QuickView/RecentQuickview";
-import RecentProduct from "./Component/Product/RecentProduct";
 import AlertQuickview from "./Component/QuickView/AlertQuickview";
 import AlertProduct from "./Component/Product/AlertProduct";
 
@@ -33,7 +31,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Homeindex />} />
           <Route path="/likes" element={<Likes />} />
-          <Route path="invite" element={<Invite/>} />
+          <Route path="/invite" element={<Invite />} />
           <Route path="/products/:id" element={<Products />}>
             <Route
               path="/products/:id/quickview/:category/:productid"

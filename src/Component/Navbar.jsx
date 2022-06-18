@@ -360,7 +360,6 @@ const DesktopNav = () => {
             <Text
               fontSize={"13px"}
               fontWeight={"500"}
-              border="1px solid #fff"
               _hover={{
                 fontSize: "13px",
                 borderBottom: "1px solid red",
