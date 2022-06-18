@@ -207,7 +207,10 @@ const Product = () => {
       </div>
 
       <div className={styles.siteinfo}>
-        <h3 className={styles.sitehead}>Shop From Partner Stores</h3>
+        <h3 className={styles.sitehead}>
+
+          Shop From Partner Stores
+          </h3>
         <p className={styles.elprice}>
           {product.product_price}
         </p>

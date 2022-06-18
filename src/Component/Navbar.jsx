@@ -191,7 +191,7 @@ export default function Navbar() {
                   <Link to={"#"}> My Message </Link>
                 </MenuItem>
                 <MenuItem fontWeight={"600"}>
-                  <Link to={"#"}> Invite Friends </Link>
+                  <Link to={"/invite"}> Invite Friends </Link>
                 </MenuItem>
                 <MenuItem fontWeight={"600"}>
                   <Link to={"/settings"}> Setting </Link>
@@ -360,7 +360,6 @@ const DesktopNav = () => {
             <Text
               fontSize={"13px"}
               fontWeight={"500"}
-              border="1px solid #fff"
               _hover={{
                 fontSize: "13px",
                 borderBottom: "1px solid red",

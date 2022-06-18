@@ -6562,6 +6562,42 @@
       "product_img_src": "https://cdn.modesens.com/product/21372265_31?w=400&",
       "product_price": "$1019 - $2095",
       "id": 3
+    },
+    {
+      "web_scraper_order": "1655219002-447",
+      "web-scraper-start_url": "https://modesens.com/shop-men-clothing/",
+      "category_MenClothing": "VERSACE Heritage Scarf Cotton & Silk Hoodie In Black     $429 - $1025 1",
+      "brand_store": "8 stores",
+      "category_MenClothing_href": "https://modesens.com/product/versace-heritage-scarf-cotton-and-silk-hoodie-black-39850150/",
+      "product_name": "VERSACE",
+      "product_description": "Heritage Scarf Cotton & Silk Hoodie In Black",
+      "product_price": "$429 - $1025",
+      "product_img_src": "https://cdn.modesens.com/availability/48961296?w=400&",
+      "id": 4
+    },
+    {
+      "web_scraper_order": "1655219005-448",
+      "web-scraper-start_url": "https://modesens.com/shop-men-clothing/",
+      "category_MenClothing": "PALM ANGELS Logo-jacquard Cotton-mesh Sweater In Black     $221 - $550 1",
+      "brand_store": "8 stores",
+      "category_MenClothing_href": "https://modesens.com/product/palm-angels-logo-jacquard-cotton-mesh-sweater-black-22309428/",
+      "product_name": "PALM ANGELS",
+      "product_description": "Logo-jacquard Cotton-mesh Sweater In Black",
+      "product_price": "$221 - $550",
+      "product_img_src": "https://cdn.modesens.com/availability/28363196?w=400&",
+      "id": 5
+    },
+    {
+      "web_scraper_order": "1655214764-222",
+      "web-scraper-start_url": "https://modesens.com/shop-home-decor/",
+      "home_decor": "VERSACE Z7010 White Gold Velluto Cotton Cushion 90cm X 90cm 1 Size In Bianco & Oro     $835 - $1075 ",
+      "brand_store": "2 stores",
+      "home_decor_href": "https://modesens.com/product/versace-z7010-white-gold-velluto-cotton-cushion-90cm-x-90cm-1-size-bianco-and-oro-34599725/",
+      "product_name": "VERSACE",
+      "product_description": "Z7010 White Gold Velluto Cotton Cushion 90cm X 90cm 1 Size In Bianco & Oro",
+      "product_img_src": "https://cdn.modesens.com/product/34599725_4?w=400&",
+      "product_price": "$835 - $1075",
+      "id": 6
     }
   ],
   "post": []
