@@ -100,9 +100,6 @@ export default function Navbar() {
           minH={"60px"}
           py={{ base: 2 }}
           px={{ base: 4 }}
-          borderBottom={1}
-          borderStyle={"solid"}
-          borderColor={useColorModeValue("gray.200", "gray.900")}
           align={"center"}
         >
           <Flex
@@ -169,7 +166,7 @@ export default function Navbar() {
                   </VStack>
                 </MenuItem>
                 <MenuItem fontWeight={"600"}>
-                  <Link to={"#"}> My Likes </Link>
+                  <Link to={"/likes"}> My Likes </Link>
                 </MenuItem>
                 <MenuItem fontWeight={"600"}>
                   <Link to={"/alerts"}> My Alerts </Link>
@@ -219,7 +216,7 @@ export default function Navbar() {
                       background: "rgba(255, 255, 255, 0.2)",
                       boxShadow: "0 4px 30px rgba(0, 0, 0, 0.1)",
                       backdropFilter: "blur(5px)",
-                      zIndex:99
+                      zIndex: 99,
                     },
                     content: {
                       width: "60%",

@@ -24,7 +24,6 @@
     font-size: 25px;
     margin-left: 90%;
     cursor: pointer;
-    color: red;
   }
   .product1img:hover .product1quckview {
     display: block !important;
