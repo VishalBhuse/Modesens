@@ -76,7 +76,7 @@ import "./Likes.css"
                               </div>   
                               <h1 style={{marginLeft:"78px",marginTop:"25px",fontWeight:"600",fontSize:"20px"}}>Share Your Thoughts</h1>  
                             <div className='comment_div'>
-                            <input onChange={handle} type="text" placeholder='Add a comment...' />
+                            <input onChange={han  dle} type="text" placeholder='Add a comment...' />
                               <img style={{height:"35px"}} src="https://cdn-icons.flaticon.com/png/128/5124/premium/5124630.png?token=exp=1655366357~hmac=93f4b81b2bad2141c3af56ed3028f6bd" alt="COMMENT" />
                               <button onClick={show_post}>POST</button>
                             </div>
