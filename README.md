@@ -93,10 +93,8 @@
         alt=""
         src="https://miro.medium.com/max/700/1*kegvN6wJ-eovgMgbo4MRAg.jpeg"
         style="
-          width: 100%;
+          width: 50%;
           height: auto;
-          margin-left: 0px;
-          margin-top: 0px;
           transform: rotate(0rad) translateZ(0px);
           -webkit-transform: rotate(0rad) translateZ(0px);
         "
@@ -128,7 +126,7 @@
         alt=""
         src="https://miro.medium.com/max/700/1*wOhPAJ6eit2Sz9Ckccj9EQ.png"
         style="
-          width: 100%;
+          width: 50%;
           height: auto;
           margin-left: 0px;
           margin-top: 0px;
@@ -162,7 +160,7 @@
         alt=""
         src="https://miro.medium.com/max/700/1*rIyxQ8If6a5eAY0Rbmvevw.jpeg"
         style="
-          width: 100%;
+          width: 50%;
           height: auto;
           margin-left: 0px;
           margin-top: 0px;
@@ -222,7 +220,7 @@
         alt=""
         src="https://miro.medium.com/max/700/1*-BET0EZA2kZUp_F7_4TvKQ.jpeg"
         style="
-          width: 100%;
+          width: 50%;
           height: auto;
           margin-left: 0px;
           margin-top: 0px;
@@ -249,7 +247,7 @@
         alt=""
         src="https://miro.medium.com/max/700/1*B9umpZ6vq5s2Wj6MxY7t-A.jpeg"
         style="
-          width: 100%;
+          width: 50%;
           height: auto;
           margin-left: 0px;
           margin-top: 0px;
@@ -303,4 +301,20 @@
   </p>
   <p class="c10"><span class="c11"></span></p>
   <p class="c10"><span class="c17"></span></p>
+  
+  # Getting Started with Create React App
+
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+## Available Scripts
+
+In the project directory, you can run:
+
+### `npm start`
+
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 </body>
